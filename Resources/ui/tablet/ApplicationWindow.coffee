@@ -1,4 +1,5 @@
 FirstView = require('ui/common/IntroScreen')
+MainMenuScreen = require("ui/common/MainMenuScreen")
 
 class ApplicationWindow
     constructor: () ->    
@@ -12,8 +13,11 @@ class ApplicationWindow
 
         
         firstView = new FirstView()
-        firstView.onExit = =>
-            console.log "firstView.onExit called"
+        firstView.onExit = =>            
+            mainMenuScreen = new MainMenuScreen().init()                        
+            self.add mainMenuScreen
+            mainMenuScreen.play()
+
         self.add(firstView)
         firstView.play()
         
