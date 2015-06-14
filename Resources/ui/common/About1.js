@@ -28,7 +28,7 @@
       });
       this.view.add(this.container);
       this.backgroundImage = Ti.UI.createImageView({
-        image: "About1-image.png",
+        image: "About1-Image.png",
         width: 2048 / 2,
         height: 1435 / 2,
         scale: 0.5

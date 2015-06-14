@@ -1,5 +1,5 @@
-Intro1 = require("ui/common/Intro1")
-Intro2 = require("ui/common/Intro2")
+Intro1 = require("/ui/common/Intro1")
+Intro2 = require("/ui/common/Intro2")
 
 class IntroScreen
     constructor: () ->

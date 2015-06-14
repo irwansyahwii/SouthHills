@@ -3,9 +3,9 @@
   var About1, About2, AboutScreen,
     bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  About1 = require("ui/common/About1");
+  About1 = require("/ui/common/About1");
 
-  About2 = require("ui/common/About2");
+  About2 = require("/ui/common/About2");
 
   AboutScreen = (function() {
     function AboutScreen() {

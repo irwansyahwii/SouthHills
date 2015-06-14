@@ -16,7 +16,7 @@ class About2
         @view.add @container
 
         @backgroundImage = Ti.UI.createImageView
-            image: "About2-image.png"
+            image: "About2-Image.png"
             width: 2048/2
             height: 1435/2
             scale: 0.5

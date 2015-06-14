@@ -1,5 +1,5 @@
-About1 = require("ui/common/About1")
-About2 = require("ui/common/About2")
+About1 = require("/ui/common/About1")
+About2 = require("/ui/common/About2")
 
 class AboutScreen
     constructor:() ->

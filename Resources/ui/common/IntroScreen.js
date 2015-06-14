@@ -3,9 +3,9 @@
   var Intro1, Intro2, IntroScreen,
     bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  Intro1 = require("ui/common/Intro1");
+  Intro1 = require("/ui/common/Intro1");
 
-  Intro2 = require("ui/common/Intro2");
+  Intro2 = require("/ui/common/Intro2");
 
   IntroScreen = (function() {
     function IntroScreen() {

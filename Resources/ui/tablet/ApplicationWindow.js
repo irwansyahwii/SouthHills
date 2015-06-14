@@ -6,7 +6,7 @@
 
   MainMenuScreen = require("ui/common/MainMenuScreen");
 
-  ScreenWithTopBarmenu = require("ui/common/ScreenWithTopBarmenu");
+  ScreenWithTopBarmenu = require("ui/common/ScreenWithTopBarMenu");
 
   ApplicationWindow = (function() {
     function ApplicationWindow() {

@@ -3,9 +3,9 @@
   var AboutScreen, SCREEN_HEIGHT, ScreenWithTopBarMenu, TopMenuBar,
     bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  TopMenuBar = require("ui/common/TopMenuBar");
+  TopMenuBar = require("/ui/common/TopMenuBar");
 
-  AboutScreen = require("ui/common/AboutScreen");
+  AboutScreen = require("/ui/common/AboutScreen");
 
   SCREEN_HEIGHT = 768;
 

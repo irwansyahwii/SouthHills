@@ -1,5 +1,5 @@
-TopMenuBar = require("ui/common/TopMenuBar")
-AboutScreen = require("ui/common/AboutScreen")
+TopMenuBar = require("/ui/common/TopMenuBar")
+AboutScreen = require("/ui/common/AboutScreen")
 
 SCREEN_HEIGHT = 768
 

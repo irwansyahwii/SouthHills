@@ -1,6 +1,6 @@
 FirstView = require('ui/common/IntroScreen')
 MainMenuScreen = require("ui/common/MainMenuScreen")
-ScreenWithTopBarmenu = require("ui/common/ScreenWithTopBarmenu")
+ScreenWithTopBarmenu = require("ui/common/ScreenWithTopBarMenu")
 
 class ApplicationWindow
     constructor: () ->    
