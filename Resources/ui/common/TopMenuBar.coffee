@@ -67,7 +67,7 @@ class TopMenuBar
 
         @addClickListener @buttonSouthHills
         @addClickListener @buttonGallery
-        @addClickListener @buttonLogo
+        @addClickListener @buttonLocation
         @addClickListener @buttonPlans
 
         @

@@ -1,6 +1,7 @@
 TopMenuBar = require("/ui/common/TopMenuBar")
 AboutScreen = require("/ui/common/AboutScreen")
 GalleryScreen = require("/ui/common/GalleryScreen")
+LocationScreen = require("/ui/common/LocationScreen")
 
 SCREEN_HEIGHT = 768
 
@@ -51,6 +52,8 @@ class ScreenWithTopBarMenu
 
         newSubScreen.view.top = @topBar.view.height
         newSubScreen.view.height = @getSubscreenHeight()
+        newSubScreen.view.width  = @view.width
+        newSubScreen.relayout()
         newSubScreen.play()
 
         @subScreen = newSubScreen
@@ -62,13 +65,15 @@ class ScreenWithTopBarMenu
 
     showGalleryScreen: () =>
         galleryScreen = new GalleryScreen().init()
-        galleryScreen.view.height = @getSubscreenHeight()
-        galleryScreen.relayout()
+        # galleryScreen.view.height = @getSubscreenHeight()
+        # galleryScreen.relayout()
         galleryScreen.onDoubleTapped = @raiseOnDoubleTapped
 
         @assignToCurrentSubscreen galleryScreen
 
     showLocationScreen: () =>
+        locationScreen = new LocationScreen().init()
+        @assignToCurrentSubscreen locationScreen
 
     showFloorplanScreen: () =>
 

@@ -71,7 +71,7 @@
       this.buttonLocation.top = 0;
       this.addClickListener(this.buttonSouthHills);
       this.addClickListener(this.buttonGallery);
-      this.addClickListener(this.buttonLogo);
+      this.addClickListener(this.buttonLocation);
       this.addClickListener(this.buttonPlans);
       return this;
     };

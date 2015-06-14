@@ -29,6 +29,8 @@ class AboutScreen
             @getCurrentView().controller.play()
 
 
+    relayout: () =>
+
     init: () =>
 
         @

@@ -12,6 +12,7 @@
       this.play = bind(this.play, this);
       this.getCurrentView = bind(this.getCurrentView, this);
       this.init = bind(this.init, this);
+      this.relayout = bind(this.relayout, this);
       this.onScrollEnd = bind(this.onScrollEnd, this);
       this.view = Ti.UI.createScrollableView();
       this.about1 = new About1().init();
@@ -27,6 +28,8 @@
         return this.getCurrentView().controller.play();
       }
     };
+
+    AboutScreen.prototype.relayout = function() {};
 
     AboutScreen.prototype.init = function() {
       return this;
