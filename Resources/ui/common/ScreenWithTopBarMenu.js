@@ -14,6 +14,8 @@
   ScreenWithTopBarMenu = (function() {
     function ScreenWithTopBarMenu() {
       this.click = bind(this.click, this);
+      this.showFloorplanScreen = bind(this.showFloorplanScreen, this);
+      this.showLocationScreen = bind(this.showLocationScreen, this);
       this.showGalleryScreen = bind(this.showGalleryScreen, this);
       this.showAboutScreen = bind(this.showAboutScreen, this);
       this.assignToCurrentSubscreen = bind(this.assignToCurrentSubscreen, this);
@@ -41,6 +43,7 @@
     ScreenWithTopBarMenu.prototype.init = function() {
       this.topBar.view.left = 0;
       this.topBar.view.top = -this.topBar.view.height;
+      this.topBar.onButtonClicked = this.click;
       return this;
     };
 
@@ -86,8 +89,23 @@
       return this.assignToCurrentSubscreen(galleryScreen);
     };
 
+    ScreenWithTopBarMenu.prototype.showLocationScreen = function() {};
+
+    ScreenWithTopBarMenu.prototype.showFloorplanScreen = function() {};
+
     ScreenWithTopBarMenu.prototype.click = function(button_id) {
-      return this.showGalleryScreen();
+      if (button_id === 0) {
+        this.showAboutScreen();
+      }
+      if (button_id === 1) {
+        this.showGalleryScreen();
+      }
+      if (button_id === 2) {
+        this.showLocationScreen();
+      }
+      if (button_id === 3) {
+        return this.showFloorplanScreen();
+      }
     };
 
     return ScreenWithTopBarMenu;

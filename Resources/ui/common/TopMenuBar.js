@@ -7,19 +7,22 @@
     function TopMenuBar() {
       this.play = bind(this.play, this);
       this.init = bind(this.init, this);
+      this.addClickListener = bind(this.addClickListener, this);
       this.view = Ti.UI.createView({
         height: 102 / 2
       });
       this.buttonSouthHills = Ti.UI.createButton({
         backgroundImage: 'MenuBar-SouthHills.png',
         width: 486 / 2,
-        height: 101 / 2
+        height: 101 / 2,
+        button_id: 0
       });
       this.view.add(this.buttonSouthHills);
       this.buttonGallery = Ti.UI.createButton({
         backgroundImage: 'MenuBar-Gallery.png',
         width: 489 / 2,
-        height: 102 / 2
+        height: 102 / 2,
+        button_id: 1
       });
       this.view.add(this.buttonGallery);
       this.buttonLogo = Ti.UI.createButton({
@@ -31,16 +34,29 @@
       this.buttonPlans = Ti.UI.createButton({
         backgroundImage: 'MenuBar-Plans.png',
         width: 489 / 2,
-        height: 102 / 2
+        height: 102 / 2,
+        button_id: 3
       });
       this.view.add(this.buttonPlans);
       this.buttonLocation = Ti.UI.createButton({
         backgroundImage: 'MenuBar-Location.png',
         width: 489 / 2,
-        height: 102 / 2
+        height: 102 / 2,
+        button_id: 2
       });
       this.view.add(this.buttonLocation);
+      this.onButtonClicked = null;
     }
+
+    TopMenuBar.prototype.addClickListener = function(btn) {
+      return btn.addEventListener("click", (function(_this) {
+        return function() {
+          if (_this.onButtonClicked !== null) {
+            return _this.onButtonClicked(btn.button_id);
+          }
+        };
+      })(this));
+    };
 
     TopMenuBar.prototype.init = function() {
       this.buttonSouthHills.left = 0;
@@ -53,6 +69,10 @@
       this.buttonPlans.top = 0;
       this.buttonLocation.left = this.buttonPlans.left + this.buttonPlans.width - 1;
       this.buttonLocation.top = 0;
+      this.addClickListener(this.buttonSouthHills);
+      this.addClickListener(this.buttonGallery);
+      this.addClickListener(this.buttonLogo);
+      this.addClickListener(this.buttonPlans);
       return this;
     };
 

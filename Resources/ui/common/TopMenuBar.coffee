@@ -7,6 +7,7 @@ class TopMenuBar
             backgroundImage: 'MenuBar-SouthHills.png'
             width: 486/2
             height: 101/2
+            button_id: 0
 
         @view.add @buttonSouthHills
 
@@ -14,6 +15,7 @@ class TopMenuBar
             backgroundImage: 'MenuBar-Gallery.png'
             width: 489/2
             height: 102/2
+            button_id: 1
 
         @view.add @buttonGallery
 
@@ -28,6 +30,7 @@ class TopMenuBar
             backgroundImage: 'MenuBar-Plans.png'
             width: 489/2
             height: 102/2
+            button_id: 3
 
         @view.add @buttonPlans
 
@@ -35,8 +38,16 @@ class TopMenuBar
             backgroundImage: 'MenuBar-Location.png'
             width: 489/2
             height: 102/2
+            button_id: 2
 
         @view.add @buttonLocation
+
+        @onButtonClicked = null
+
+    addClickListener: (btn) =>
+        btn.addEventListener "click", =>
+            if @onButtonClicked isnt null
+                @onButtonClicked(btn.button_id)
 
     init: () =>
         @buttonSouthHills.left = 0
@@ -54,7 +65,14 @@ class TopMenuBar
         @buttonLocation.left = @buttonPlans.left + @buttonPlans.width - 1
         @buttonLocation.top = 0
 
+        @addClickListener @buttonSouthHills
+        @addClickListener @buttonGallery
+        @addClickListener @buttonLogo
+        @addClickListener @buttonPlans
+
         @
+
+
 
     play: () =>
 

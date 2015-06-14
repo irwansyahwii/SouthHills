@@ -27,6 +27,8 @@ class ScreenWithTopBarMenu
 
         @topBar.view.left = 0
         @topBar.view.top = - @topBar.view.height
+
+        @topBar.onButtonClicked = @click
         # @topBar.view.top = 0
 
         @
@@ -66,9 +68,22 @@ class ScreenWithTopBarMenu
 
         @assignToCurrentSubscreen galleryScreen
 
+    showLocationScreen: () =>
+
+    showFloorplanScreen: () =>
+
+
     click: (button_id) =>        
-        @showGalleryScreen()
+        if button_id is 0        
+            @showAboutScreen()
 
+        if button_id is 1
+            @showGalleryScreen()
 
+        if button_id is 2
+            @showLocationScreen()
+
+        if button_id is 3
+            @showFloorplanScreen()
 
 module.exports = ScreenWithTopBarMenu
