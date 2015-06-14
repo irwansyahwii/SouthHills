@@ -1,5 +1,6 @@
 TopMenuBar = require("/ui/common/TopMenuBar")
 AboutScreen = require("/ui/common/AboutScreen")
+GalleryScreen = require("/ui/common/GalleryScreen")
 
 SCREEN_HEIGHT = 768
 
@@ -13,6 +14,8 @@ class ScreenWithTopBarMenu
         @topBar = new TopMenuBar().init()
 
         @view.add @topBar.view
+
+        @subScreen = null
 
     init: () =>
 
@@ -30,12 +33,33 @@ class ScreenWithTopBarMenu
     play: () =>
         @animateInTopBar()
 
-    click: (button_id) =>        
+    getSubscreenHeight: () =>
+        SCREEN_HEIGHT - @topBar.view.height        
+
+    assignToCurrentSubscreen: (newSubScreen) =>
+        if @subScreen isnt null
+            @subScreen.view.getParent().remove(@subScreen.view)
+            @subScreen = null
+
+        newSubScreen.view.top = @topBar.view.height
+        newSubScreen.view.height = @getSubscreenHeight()
+        newSubScreen.play()
+
+        @subScreen = newSubScreen
+        @view.add newSubScreen
+
+    showAboutScreen: () =>
         aboutScreen = new AboutScreen().init()
-        aboutScreen.view.top = @topBar.view.height
-        aboutScreen.view.height = SCREEN_HEIGHT - @topBar.view.height
-        @view.add aboutScreen
-        aboutScreen.play()
+        @assignToCurrentSubscreen aboutScreen
+
+    showGalleryScreen: () =>
+        galleryScreen = new GalleryScreen().init()
+        galleryScreen.view.height = @getSubscreenHeight()
+        galleryScreen.relayout()
+        @assignToCurrentSubscreen galleryScreen
+
+    click: (button_id) =>        
+        @showGalleryScreen()
 
 
 
