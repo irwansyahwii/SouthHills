@@ -2,6 +2,8 @@ class GalleryScreen
     constructor: () ->
         @view = Ti.UI.createView()
 
+        @view.addEventListener "doubletap", @onMainViewDoubleTapped
+
 
         @large_scroll_view = Ti.UI.createScrollableView()
             
@@ -50,6 +52,25 @@ class GalleryScreen
         @large_scroll_view.top = 0
         @thumb_scroll_view.left = 0
 
+        @onDoubleTapped = null
+
+    raiseOnDoubleTapped: () =>
+        if @onDoubleTapped isnt null
+            eventInfo = 
+                event_type: "GALLERY"                
+                event_data:
+                    pos: 
+                        left: @large_scroll_view.left
+                        top: @large_scroll_view.top
+                    height: @large_scroll_view.height
+                    width: @large_scroll_view.width
+
+                    current_image_index: @large_scroll_view.currentPage
+
+            @onDoubleTapped(eventInfo)
+
+    onMainViewDoubleTapped: () =>
+        @raiseOnDoubleTapped()
 
     relayout: () =>
         @large_scroll_view.height = @view.height - @thumb_scroll_view.height

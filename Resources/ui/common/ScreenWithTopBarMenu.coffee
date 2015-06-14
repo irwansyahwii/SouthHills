@@ -17,6 +17,12 @@ class ScreenWithTopBarMenu
 
         @subScreen = null
 
+        @onDoubleTapped = null
+
+    raiseOnDoubleTapped: (eventInfo) =>
+        if @onDoubleTapped isnt null
+            @onDoubleTapped(eventInfo)
+
     init: () =>
 
         @topBar.view.left = 0
@@ -56,6 +62,8 @@ class ScreenWithTopBarMenu
         galleryScreen = new GalleryScreen().init()
         galleryScreen.view.height = @getSubscreenHeight()
         galleryScreen.relayout()
+        galleryScreen.onDoubleTapped = @raiseOnDoubleTapped
+
         @assignToCurrentSubscreen galleryScreen
 
     click: (button_id) =>        

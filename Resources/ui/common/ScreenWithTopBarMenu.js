@@ -21,6 +21,7 @@
       this.play = bind(this.play, this);
       this.animateInTopBar = bind(this.animateInTopBar, this);
       this.init = bind(this.init, this);
+      this.raiseOnDoubleTapped = bind(this.raiseOnDoubleTapped, this);
       this.view = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: Ti.UI.FILL
@@ -28,7 +29,14 @@
       this.topBar = new TopMenuBar().init();
       this.view.add(this.topBar.view);
       this.subScreen = null;
+      this.onDoubleTapped = null;
     }
+
+    ScreenWithTopBarMenu.prototype.raiseOnDoubleTapped = function(eventInfo) {
+      if (this.onDoubleTapped !== null) {
+        return this.onDoubleTapped(eventInfo);
+      }
+    };
 
     ScreenWithTopBarMenu.prototype.init = function() {
       this.topBar.view.left = 0;
@@ -74,6 +82,7 @@
       galleryScreen = new GalleryScreen().init();
       galleryScreen.view.height = this.getSubscreenHeight();
       galleryScreen.relayout();
+      galleryScreen.onDoubleTapped = this.raiseOnDoubleTapped;
       return this.assignToCurrentSubscreen(galleryScreen);
     };
 

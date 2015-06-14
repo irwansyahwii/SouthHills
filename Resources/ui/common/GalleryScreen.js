@@ -8,8 +8,11 @@
       this.play = bind(this.play, this);
       this.init = bind(this.init, this);
       this.relayout = bind(this.relayout, this);
+      this.onMainViewDoubleTapped = bind(this.onMainViewDoubleTapped, this);
+      this.raiseOnDoubleTapped = bind(this.raiseOnDoubleTapped, this);
       var i, imgInfo, j, thumb_image_wrapper;
       this.view = Ti.UI.createView();
+      this.view.addEventListener("doubletap", this.onMainViewDoubleTapped);
       this.large_scroll_view = Ti.UI.createScrollableView();
       this.images = [];
       this.large_images = [];
@@ -49,7 +52,31 @@
       this.large_scroll_view.left = 0;
       this.large_scroll_view.top = 0;
       this.thumb_scroll_view.left = 0;
+      this.onDoubleTapped = null;
     }
+
+    GalleryScreen.prototype.raiseOnDoubleTapped = function() {
+      var eventInfo;
+      if (this.onDoubleTapped !== null) {
+        eventInfo = {
+          event_type: "GALLERY",
+          event_data: {
+            pos: {
+              left: this.large_scroll_view.left,
+              top: this.large_scroll_view.top
+            },
+            height: this.large_scroll_view.height,
+            width: this.large_scroll_view.width,
+            current_image_index: this.large_scroll_view.currentPage
+          }
+        };
+        return this.onDoubleTapped(eventInfo);
+      }
+    };
+
+    GalleryScreen.prototype.onMainViewDoubleTapped = function() {
+      return this.raiseOnDoubleTapped();
+    };
 
     GalleryScreen.prototype.relayout = function() {
       this.large_scroll_view.height = this.view.height - this.thumb_scroll_view.height;

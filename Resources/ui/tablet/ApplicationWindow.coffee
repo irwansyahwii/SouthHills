@@ -1,6 +1,7 @@
 FirstView = require('ui/common/IntroScreen')
 MainMenuScreen = require("ui/common/MainMenuScreen")
 ScreenWithTopBarmenu = require("ui/common/ScreenWithTopBarMenu")
+FullScreenGallery = require("ui/common/FullScreenGallery")
 
 class ApplicationWindow
     constructor: () ->    
@@ -16,10 +17,20 @@ class ApplicationWindow
         
         firstView = new FirstView()
         firstView.onExit = =>            
+
             mainMenuScreen = new MainMenuScreen().init()      
 
             mainMenuScreen.onButtonClicked = (button_id) =>
                 topBarScreen = new ScreenWithTopBarmenu().init()
+                topBarScreen.onDoubleTapped = (eventInfo)=>
+                    if eventInfo.event_type is "GALLERY"
+                        eventData = eventInfo.event_data
+                        console.log eventInfo
+                        fullscreenGallery = new FullScreenGallery().init()   
+                        fullscreenGallery.setEventData(eventData)
+                        self.add fullscreenGallery
+                        fullscreenGallery.play()
+
                 self.add topBarScreen
                 topBarScreen.play()
                 topBarScreen.click button_id

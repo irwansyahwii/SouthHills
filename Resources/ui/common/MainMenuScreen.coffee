@@ -37,6 +37,8 @@ class MainMenuScreen
 
         @onButtonClicked = null
 
+        
+
     init: () =>
         @buttonSouthHills.left = 0
         @buttonSouthHills.top = - @buttonSouthHills.height 
