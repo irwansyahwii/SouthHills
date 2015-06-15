@@ -1,4 +1,6 @@
 SitePlanScreen = require("/ui/common/SitePlanScreen")
+NorthViewScreen = require("/ui/common/NorthViewScreen")
+SouthViewScreen = require("/ui/common/SouthViewScreen")
 
 BUTTON_WIDTH = 286
 BUTTON_HEIGHT = 69
@@ -83,12 +85,26 @@ class FloorplanScreen
         # @subScreen = newSubScreen
         @view.add newSubScreen
     showSitePlanScreen: () =>
+        sitePlanScreen = new SitePlanScreen().init()
+        @assignToCurrentSubscreen sitePlanScreen
+
+    showNorthViewScreen: () =>
+        northViewScreen = new NorthViewScreen().init()
+        @assignToCurrentSubscreen northViewScreen
+
+    showSouthViewScreen: () =>
+        southViewScreen = new SouthViewScreen().init()
+        @assignToCurrentSubscreen southViewScreen
 
     addClickEventToButton: (button) =>
         button.addEventListener "click", =>
             if button.button_id is 0
-                sitePlanScreen = new SitePlanScreen().init()
-                @assignToCurrentSubscreen sitePlanScreen
+                @showSitePlanScreen()
+            if button.button_id is 2
+                @showNorthViewScreen()
+            if button.button_id is 3
+                @showSouthViewScreen()
+
     init: () =>
 
         @addClickEventToButton @buttonSitePlan
@@ -101,6 +117,7 @@ class FloorplanScreen
         @
 
     play: () =>
+        @showSitePlanScreen()
 
     relayout: () =>
 
