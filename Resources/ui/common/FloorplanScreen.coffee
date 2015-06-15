@@ -1,6 +1,6 @@
 SitePlanScreen = require("/ui/common/SitePlanScreen")
 NorthViewScreen = require("/ui/common/NorthViewScreen")
-SouthViewScreen = require("/ui/common/SouthViewScreen")
+
 
 BUTTON_WIDTH = 286
 BUTTON_HEIGHT = 69
@@ -89,11 +89,11 @@ class FloorplanScreen
         @assignToCurrentSubscreen sitePlanScreen
 
     showNorthViewScreen: () =>
-        northViewScreen = new NorthViewScreen().init()
+        northViewScreen = new NorthViewScreen("NorthView").init()
         @assignToCurrentSubscreen northViewScreen
 
     showSouthViewScreen: () =>
-        southViewScreen = new SouthViewScreen().init()
+        southViewScreen = new NorthViewScreen("SouthView").init()
         @assignToCurrentSubscreen southViewScreen
 
     addClickEventToButton: (button) =>
