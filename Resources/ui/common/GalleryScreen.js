@@ -8,11 +8,11 @@
       this.play = bind(this.play, this);
       this.init = bind(this.init, this);
       this.relayout = bind(this.relayout, this);
-      this.onMainViewDoubleTapped = bind(this.onMainViewDoubleTapped, this);
+      this.onLargeImageViewDoubleTapped = bind(this.onLargeImageViewDoubleTapped, this);
       this.raiseOnDoubleTapped = bind(this.raiseOnDoubleTapped, this);
+      this.onThumbImageClicked = bind(this.onThumbImageClicked, this);
       var i, imgInfo, j, thumb_image_wrapper;
       this.view = Ti.UI.createView();
-      this.view.addEventListener("doubletap", this.onMainViewDoubleTapped);
       this.large_scroll_view = Ti.UI.createScrollableView();
       this.images = [];
       this.large_images = [];
@@ -27,12 +27,15 @@
           large_image: Ti.UI.createImageView({
             image: "Gallery-Image" + i + ".png"
           }),
-          thumb_image: Ti.UI.createImageView({
-            image: "Gallery-Thumb" + i + ".png",
+          thumb_image: Ti.UI.createButton({
+            backgroundImage: "Gallery-Thumb" + i + ".png",
             width: 223 / 2,
-            height: 223 / 2
+            height: 223 / 2,
+            image_index: i - 1
           })
         };
+        imgInfo.large_image.addEventListener("doubletap", this.onLargeImageViewDoubleTapped);
+        imgInfo.thumb_image.addEventListener("click", this.onThumbImageClicked);
         this.images.push(imgInfo);
         this.large_images.push(imgInfo.large_image);
         thumb_image_wrapper = Ti.UI.createView({
@@ -55,6 +58,10 @@
       this.onDoubleTapped = null;
     }
 
+    GalleryScreen.prototype.onThumbImageClicked = function(e) {
+      return this.large_scroll_view.scrollToView(this.large_scroll_view.views[e.source.image_index]);
+    };
+
     GalleryScreen.prototype.raiseOnDoubleTapped = function() {
       var eventInfo;
       if (this.onDoubleTapped !== null) {
@@ -74,7 +81,7 @@
       }
     };
 
-    GalleryScreen.prototype.onMainViewDoubleTapped = function() {
+    GalleryScreen.prototype.onLargeImageViewDoubleTapped = function() {
       return this.raiseOnDoubleTapped();
     };
 

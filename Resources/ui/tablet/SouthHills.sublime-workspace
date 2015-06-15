@@ -4,28 +4,156 @@
 		"selected_items":
 		[
 			[
-				"ani",
-				"animateOutLocationAndGallery"
+				"a",
+				"assignToCurrentSubscreen"
 			],
 			[
-				"but",
-				"button_id"
+				"lo",
+				"LocationScreen"
+			],
+			[
+				"ima",
+				"imageView"
 			],
 			[
 				"bu",
-				"buttonSouthHills"
+				"buttonPlans"
+			],
+			[
+				"ad",
+				"addClickListener"
+			],
+			[
+				"show",
+				"showLocationScreen"
+			],
+			[
+				"sho",
+				"showGalleryScreen"
+			],
+			[
+				"large",
+				"large_scroll_view"
+			],
+			[
+				"eve",
+				"eventInfo"
+			],
+			[
+				"im",
+				"image_index"
+			],
+			[
+				"ani",
+				"anim"
+			],
+			[
+				"re",
+				"reset"
+			],
+			[
+				"full",
+				"fullscreenGallery"
+			],
+			[
+				"en",
+				"eventInfo"
+			],
+			[
+				"fu",
+				"fullscreenGallery"
+			],
+			[
+				"get",
+				"getSubscreenHeight"
+			],
+			[
+				"vie",
+				"view"
+			],
+			[
+				"thu",
+				"thumb_image"
+			],
+			[
+				"la",
+				"large_scroll_view"
+			],
+			[
+				"th",
+				"thumb_scroll_view"
+			],
+			[
+				"thum",
+				"thumb_image"
+			],
+			[
+				"new",
+				"newSubScreen"
 			],
 			[
 				"SC",
-				"SCREEN_HEIGHT"
-			],
-			[
-				"Sc",
 				"SCREEN_WIDTH"
 			],
 			[
+				"Sc",
+				"SCREEN_HEIGHT"
+			],
+			[
+				"cur",
+				"currentPage"
+			],
+			[
+				"vi",
+				"view"
+			],
+			[
+				"view",
+				"views"
+			],
+			[
+				"anim",
+				"animateInCaptionImage"
+			],
+			[
+				"an",
+				"animateInText1Image"
+			],
+			[
+				"te",
+				"text2Image"
+			],
+			[
+				"text",
+				"text1Image"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"ab",
+				"about2"
+			],
+			[
+				"abou",
+				"about1"
+			],
+			[
+				"scre",
+				"SCREEN_HEIGHT"
+			],
+			[
+				"top",
+				"topBar"
+			],
+			[
 				"butt",
-				"buttonGallery"
+				"buttonLocation"
+			],
+			[
+				"but",
+				"buttonPlans"
 			],
 			[
 				"l",
@@ -38,10 +166,6 @@
 			[
 				"on",
 				"onExit"
-			],
-			[
-				"text",
-				"text2Image"
 			],
 			[
 				"fa",
@@ -66,10 +190,6 @@
 			[
 				"fade",
 				"fadeOutMainView"
-			],
-			[
-				"cur",
-				"curvein"
 			],
 			[
 				"he",
@@ -192,10 +312,6 @@
 				"EmailSendingCron_logsEndTime"
 			],
 			[
-				"new",
-				"new_month"
-			],
-			[
 				"Email_Sending",
 				"EmailSendingCron_processEachRowsInsideTheMailingStatesTable"
 			],
@@ -268,16 +384,8 @@
 				"MailingState_process"
 			],
 			[
-				"re",
-				"resizeComponent"
-			],
-			[
 				"Fa",
 				"famousNode"
-			],
-			[
-				"get",
-				"getSize"
 			],
 			[
 				"set",
@@ -302,10 +410,6 @@
 			[
 				"Pro",
 				"property"
-			],
-			[
-				"con",
-				"console"
 			],
 			[
 				"data",
@@ -410,119 +514,50 @@
 			[
 				"su",
 				"success_state"
-			],
-			[
-				"ta",
-				"table"
-			],
-			[
-				"M",
-				"MEMBERS_PROCESS_RESULT_TABLE_NAME"
-			],
-			[
-				"Logge",
-				"Logged"
-			],
-			[
-				"Err",
-				"error"
-			],
-			[
-				"de",
-				"deferred"
-			],
-			[
-				"pr",
-				"promise"
-			],
-			[
-				"ea",
-				"each_row_deferred"
-			],
-			[
-				"er",
-				"error"
-			],
-			[
-				"or",
-				"original_state"
-			],
-			[
-				"po",
-				"postEmailForPromise"
-			],
-			[
-				"mo",
-				"month_index_two_months_from_now"
-			],
-			[
-				"ru",
-				"return"
-			],
-			[
-				"moment",
-				"momentDate"
-			],
-			[
-				"ex",
-				"expiration_date"
-			],
-			[
-				"Er",
-				"Error"
-			],
-			[
-				"sr",
-				"stringify"
-			],
-			[
-				"ma",
-				"MAILING_STATES_TABLE_NAME"
-			],
-			[
-				"ne",
-				"next_expiration_date_string2"
-			],
-			[
-				"log",
-				"log_id"
-			],
-			[
-				"swi",
-				"switchInstant"
-			],
-			[
-				"a",
-				"afterBackButtonClicked"
-			],
-			[
-				"afte",
-				"afterBackButtonClicked"
-			],
-			[
-				"s",
-				"subMenuScreen"
-			],
-			[
-				"cen",
-				"center_hidden"
-			],
-			[
-				"hi",
-				"hideAllLayers"
-			],
-			[
-				"h",
-				"height"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/LocationScreen.coffee",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 467,
+				"line_ending": "Unix",
+				"name": "LocationScreen.coffee"
+			}
+		},
+		{
+			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/TopMenuBar.coffee",
+			"settings":
+			{
+				"buffer_size": 2017,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/MainMenuScreen.coffee",
+			"settings":
+			{
+				"buffer_size": 3338,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "https://id.linkedin.com/in/irwansyahirwansyah",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Unix",
+				"name": "https://id.linkedin.com/in/irwansyahirwansyah"
+			}
+		},
+		{
+			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/ScreenWithTopBarMenu.coffee",
+			"settings":
+			{
+				"buffer_size": 2390,
 				"line_ending": "Unix"
 			}
 		}
@@ -620,14 +655,29 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/irwansyah/PROJECTS/Titanium/South Hilss"
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/tablet"
 	],
 	"file_history":
 	[
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/AboutScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/tablet/ApplicationWindow.coffee",
-		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/Intro1.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/FullScreenGallery.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/MainMenuScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/TopMenuBar.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/GalleryScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/ScreenWithTopBarMenu.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/About2.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/tablet/ScreenWithTopBarMenu.js",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/tablet/IntroScreen.js",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/tablet/AboutScreen.js",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/IntroScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/About1.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/ScreenWithTopBarMenu.js",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/Intro1.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/Intro2.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/MainMenuScreen.js",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/tablet/ApplicationWindow.js",
@@ -740,18 +790,7 @@
 		"/Users/irwansyah/PROJECTS/irwan-ACNA-Website/sites/default/sql/total_members_active_1mo_grace.sql",
 		"/Users/irwansyah/PROJECTS/irwan-ACNA-Website/sites/default/sql/membership_by_source.sql",
 		"/Users/irwansyah/PROJECTS/irwan-ACNA-Website/sites/all/modules/forena/repos/sample/distribution.sql",
-		"/Users/irwansyah/PROJECTS/irwan-ACNA-Website/sites/all/modules/forena/repos/reports/sample/state_breakdown.frx",
-		"/Users/irwansyah/PROJECTS/irwan-ACNA-Website/sites/all/modules/forena/repos/sample/users_by_state.sql",
-		"/Users/irwansyah/PROJECTS/irwan-ACNA-Website/sites/default/files/forena-reports/adhoc_report.frx",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/screens/Intro1Layer.js",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/screens/ScreenMainMenu.coffee",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/screens/ScreenIntro.coffee",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/testApp.coffee",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/framer/framer.js",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/index.html",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/test.js",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/test.coffee",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/app.js"
+		"/Users/irwansyah/PROJECTS/irwan-ACNA-Website/sites/all/modules/forena/repos/reports/sample/state_breakdown.frx"
 	],
 	"find":
 	{
@@ -780,6 +819,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"newSubScreen",
+			"View",
+			"view",
+			"View",
+			"view",
+			"crateView",
+			"aboutScreen",
+			"/ui/common",
+			"backgroundImage",
+			"About1",
+			"text1Image",
+			"backgroundImage",
+			"new Ti",
+			"buttonGallery",
 			".click =",
 			"image",
 			"createImageView",
@@ -893,21 +946,7 @@
 			"mail_nid",
 			"email_nid",
 			"audiclubna_send_membership_emails",
-			"postemailfor",
-			"success_state",
-			"update",
-			"@success_state",
-			"@success_stae",
-			"@success_state",
-			"audiclubna_note_renewal_reminder",
-			"audiclubna_batch_renewal_reminder_emails",
-			"AudiClubNA Send Membership Emails",
-			"audiclubna_send_membership_emails",
-			"AudiClubNA Send Membership Emails",
-			"email_nid",
-			"MailingState_logProcessingError",
-			"$row.",
-			"db_update"
+			"postemailfor"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -925,15 +964,75 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/LocationScreen.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 467,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								390,
+								390
+							]
+						],
+						"settings":
+						{
+							"auto_name": "LocationScreen.coffee",
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/TopMenuBar.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2017,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1907,
+								1907
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 524.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/MainMenuScreen.coffee",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3338,
 						"regions":
 						{
 						},
@@ -946,6 +1045,36 @@
 						],
 						"settings":
 						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 1025.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "https://id.linkedin.com/in/irwansyahirwansyah",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -953,6 +1082,36 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/ScreenWithTopBarMenu.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1370,
+								1370
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 522.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1010,6 +1169,18 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"abou",
+				"Resources/ui/common/AboutScreen.coffee"
+			],
+			[
+				"about",
+				"Resources/ui/common/About2.coffee"
+			],
+			[
+				"intro",
+				"Resources/ui/common/Intro1.coffee"
+			],
 			[
 				"fir",
 				"Resources/ui/common/FirstView.js"
@@ -1347,7 +1518,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 221.0,
+	"side_bar_width": 335.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
