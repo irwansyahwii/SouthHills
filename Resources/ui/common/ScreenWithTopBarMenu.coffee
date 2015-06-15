@@ -2,6 +2,7 @@ TopMenuBar = require("/ui/common/TopMenuBar")
 AboutScreen = require("/ui/common/AboutScreen")
 GalleryScreen = require("/ui/common/GalleryScreen")
 LocationScreen = require("/ui/common/LocationScreen")
+FloorplanScreen = require("/ui/common/FloorplanScreen")
 
 SCREEN_HEIGHT = 768
 
@@ -76,7 +77,8 @@ class ScreenWithTopBarMenu
         @assignToCurrentSubscreen locationScreen
 
     showFloorplanScreen: () =>
-
+        floorPlanscreen = new FloorplanScreen().init()
+        @assignToCurrentSubscreen floorPlanscreen
 
     click: (button_id) =>        
         if button_id is 0        
