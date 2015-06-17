@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"vi",
+				"visible"
+			],
+			[
+				"Hig",
+				"HighZone-Toolbar"
+			],
+			[
+				"to",
+				"toolbarView"
+			],
+			[
+				"sho",
+				"showHighZoneScreen"
+			],
+			[
+				"but",
+				"button_id"
+			],
+			[
 				"con",
 				"contentWidth"
 			],
@@ -40,16 +60,8 @@
 				"button_id"
 			],
 			[
-				"but",
-				"button"
-			],
-			[
 				"add",
 				"addClickEventToButton"
-			],
-			[
-				"sho",
-				"showSitePlanScreen"
 			],
 			[
 				"nor",
@@ -166,10 +178,6 @@
 			[
 				"cur",
 				"currentPage"
-			],
-			[
-				"vi",
-				"view"
 			],
 			[
 				"anim",
@@ -506,37 +514,11 @@
 			[
 				"arr",
 				"array	$… = array (…)"
-			],
-			[
-				"next",
-				"next_day_next_months"
-			],
-			[
-				"next_",
-				"next_day_next_months"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/FloorplanScreen.coffee",
-			"settings":
-			{
-				"buffer_size": 3609,
-				"line_ending": "Unix",
-				"name": "FloorplanScreen.coffee"
-			}
-		},
-		{
-			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/SitePlanScreen.coffee",
-			"settings":
-			{
-				"buffer_size": 435,
-				"line_ending": "Unix",
-				"name": "SitePlanScreen.coffee"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -639,6 +621,10 @@
 	],
 	"file_history":
 	[
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/RoomScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/FloorplanScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/HighZoneScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/SitePlanScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/NorthViewScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/DayViewScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/SouthViewScreen.coffee",
@@ -762,11 +748,7 @@
 		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-App/www/js/screens/Intro1_1024.coffee",
 		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-App/www/js/screens/Intro1Layer.coffee",
 		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/blank/www/index.html",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/blank/www/framer/background.png",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/blank/www/screens/Intro1Layer.js",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/blank/www/screens/Intro1Layer.coffee",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/blank/www/screens/ScreenIntro.coffee",
-		"/Users/irwansyah/PROJECTS/irwan-ACNA-Website/sites/default/files/forena-reports/membership_source_total_members.sql"
+		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/blank/www/framer/background.png"
 	],
 	"find":
 	{
@@ -795,6 +777,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"dayViewRow1",
+			"Button3Bedroom",
+			"button3Bedroom",
+			"Button3Bedroom",
+			"button3Bedroom",
+			"Button2Bedroom",
+			"button2Bedroom",
+			"image",
+			"Button1Bedroom",
+			"button1Bedroom",
 			"NorthView",
 			"NorthViewScreen",
 			"northViewScreen",
@@ -912,17 +904,7 @@
 			"MailingState_updateLastUpdatedInfo",
 			"updatelast",
 			".products_purchase_id",
-			"MAILING_CRON_LOGS_TABLE_NAME",
-			"db_update",
-			"MailingState_updateLastUpdatedInfo",
-			"db_update",
-			"MailingState_logEmailingPeriodEnds",
-			");\n",
-			"MailingState_deleteRow",
-			"MailingState_logAlreadyExtended",
-			"processsendem",
-			"MailingState_processAlreadyExtended",
-			"MailingState_processSendEmail"
+			"MAILING_CRON_LOGS_TABLE_NAME"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -940,67 +922,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/FloorplanScreen.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3609,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								168,
-								168
-							]
-						],
-						"settings":
-						{
-							"auto_name": "FloorplanScreen.coffee",
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/SitePlanScreen.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 435,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								113,
-								113
-							]
-						],
-						"settings":
-						{
-							"auto_name": "SitePlanScreen.coffee",
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],

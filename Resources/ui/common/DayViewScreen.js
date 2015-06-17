@@ -9,7 +9,7 @@
       this.play = bind(this.play, this);
       this.init = bind(this.init, this);
       this.view = Ti.UI.createScrollView({
-        backgroundColor: "#ede0c8",
+        backgroundColor: "black",
         maxZoomScale: 2.0
       });
       this.fullscreenView = Ti.UI.createImageView({

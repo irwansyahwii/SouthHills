@@ -1,7 +1,7 @@
 class DayViewScreen
     constructor: (image_name, width, height) ->
         @view = Ti.UI.createScrollView
-            backgroundColor: "#ede0c8"
+            backgroundColor:"black"  #"#ede0c8"
             maxZoomScale: 2.0
             # contentWidth: width/2
             # contentHeight: height/2
