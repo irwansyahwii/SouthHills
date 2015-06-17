@@ -1,5 +1,6 @@
 SitePlanScreen = require("/ui/common/SitePlanScreen")
 NorthViewScreen = require("/ui/common/NorthViewScreen")
+HighZoneScreen = require("/ui/common/HighZoneScreen")
 
 
 BUTTON_WIDTH = 286
@@ -52,7 +53,7 @@ class FloorplanScreen
             backgroundImage: 'SitePlan-ButtonNorthView.png'
             width: BUTTON_WIDTH/2
             height: BUTTON_HEIGHT/2
-            button_id: 2
+            button_id: 3
             left: 1256/2
             top: BUTTON_POS_Y/2
         @toolbar.add @buttonNorthView
@@ -61,7 +62,7 @@ class FloorplanScreen
             backgroundImage: 'SitePlan-ButtonSouthView.png'
             width: BUTTON_WIDTH/2
             height: BUTTON_HEIGHT/2
-            button_id: 3
+            button_id: 4
             left: 1655/2
             top: BUTTON_POS_Y/2
         @toolbar.add @buttonSouthView
@@ -82,7 +83,7 @@ class FloorplanScreen
         newSubScreen.relayout()
         newSubScreen.play()
 
-        # @subScreen = newSubScreen
+        @subScreen = newSubScreen
         @view.add newSubScreen
     showSitePlanScreen: () =>
         sitePlanScreen = new SitePlanScreen().init()
@@ -96,13 +97,19 @@ class FloorplanScreen
         southViewScreen = new NorthViewScreen("SouthView").init()
         @assignToCurrentSubscreen southViewScreen
 
+    showHighZoneScreen: () =>
+        highZoneScreen = new HighZoneScreen().init()
+        @assignToCurrentSubscreen highZoneScreen
+
     addClickEventToButton: (button) =>
         button.addEventListener "click", =>
             if button.button_id is 0
                 @showSitePlanScreen()
             if button.button_id is 2
-                @showNorthViewScreen()
+                @showHighZoneScreen()
             if button.button_id is 3
+                @showNorthViewScreen()
+            if button.button_id is 4
                 @showSouthViewScreen()
 
     init: () =>

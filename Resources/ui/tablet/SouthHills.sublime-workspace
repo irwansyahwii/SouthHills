@@ -4,6 +4,98 @@
 		"selected_items":
 		[
 			[
+				"con",
+				"contentWidth"
+			],
+			[
+				"ima",
+				"image_name"
+			],
+			[
+				"image",
+				"imageName"
+			],
+			[
+				"Da",
+				"DayViewScreen"
+			],
+			[
+				"get",
+				"getParent"
+			],
+			[
+				"view",
+				"view_name"
+			],
+			[
+				"v",
+				"view_name"
+			],
+			[
+				"iamge",
+				"imageName"
+			],
+			[
+				"bu",
+				"button_id"
+			],
+			[
+				"but",
+				"button"
+			],
+			[
+				"add",
+				"addClickEventToButton"
+			],
+			[
+				"sho",
+				"showSitePlanScreen"
+			],
+			[
+				"nor",
+				"northViewScreen"
+			],
+			[
+				"butt",
+				"button"
+			],
+			[
+				"ad",
+				"addClickEventToButton"
+			],
+			[
+				"button",
+				"button_id"
+			],
+			[
+				"B",
+				"BUTTON_POS_Y"
+			],
+			[
+				"BUTT",
+				"BUTTON_HEIGHT"
+			],
+			[
+				"BUT",
+				"BUTTON_WIDTH"
+			],
+			[
+				"create",
+				"createImageView"
+			],
+			[
+				"la",
+				"large_scroll_view"
+			],
+			[
+				"on",
+				"onThumbImageClicked"
+			],
+			[
+				"im",
+				"imgInfo"
+			],
+			[
 				"a",
 				"assignToCurrentSubscreen"
 			],
@@ -12,24 +104,8 @@
 				"LocationScreen"
 			],
 			[
-				"ima",
-				"imageView"
-			],
-			[
-				"bu",
-				"buttonPlans"
-			],
-			[
-				"ad",
-				"addClickListener"
-			],
-			[
 				"show",
 				"showLocationScreen"
-			],
-			[
-				"sho",
-				"showGalleryScreen"
 			],
 			[
 				"large",
@@ -38,10 +114,6 @@
 			[
 				"eve",
 				"eventInfo"
-			],
-			[
-				"im",
-				"image_index"
 			],
 			[
 				"ani",
@@ -64,20 +136,12 @@
 				"fullscreenGallery"
 			],
 			[
-				"get",
-				"getSubscreenHeight"
-			],
-			[
 				"vie",
 				"view"
 			],
 			[
 				"thu",
 				"thumb_image"
-			],
-			[
-				"la",
-				"large_scroll_view"
 			],
 			[
 				"th",
@@ -108,10 +172,6 @@
 				"view"
 			],
 			[
-				"view",
-				"views"
-			],
-			[
 				"anim",
 				"animateInCaptionImage"
 			],
@@ -126,10 +186,6 @@
 			[
 				"text",
 				"text1Image"
-			],
-			[
-				"con",
-				"container"
 			],
 			[
 				"ab",
@@ -148,24 +204,12 @@
 				"topBar"
 			],
 			[
-				"butt",
-				"buttonLocation"
-			],
-			[
-				"but",
-				"buttonPlans"
-			],
-			[
 				"l",
 				"left"
 			],
 			[
 				"req",
 				"require"
-			],
-			[
-				"on",
-				"onExit"
 			],
 			[
 				"fa",
@@ -470,95 +514,27 @@
 			[
 				"next_",
 				"next_day_next_months"
-			],
-			[
-				"Date",
-				"DateInterval"
-			],
-			[
-				"curr",
-				"current_date_timestamp"
-			],
-			[
-				"mont",
-				"month_value"
-			],
-			[
-				"Emai",
-				"EmailSendingCron_retrieveAllMembersWillExpiredInMonths"
-			],
-			[
-				"variable",
-				"variable_set	variable_set"
-			],
-			[
-				"UNIT",
-				"UNIX_TIMESTAMP"
-			],
-			[
-				"cro",
-				"cron_log_data"
-			],
-			[
-				"process_re",
-				"MEMBERS_PROCESS_RESULT_TABLE_NAME"
-			],
-			[
-				"Cron_log",
-				"MAILING_CRON_LOGS_TABLE_NAME"
-			],
-			[
-				"eac",
-				"each_row_deferred"
-			],
-			[
-				"su",
-				"success_state"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/LocationScreen.coffee",
+			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/FloorplanScreen.coffee",
 			"settings":
 			{
-				"buffer_size": 467,
+				"buffer_size": 3609,
 				"line_ending": "Unix",
-				"name": "LocationScreen.coffee"
+				"name": "FloorplanScreen.coffee"
 			}
 		},
 		{
-			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/TopMenuBar.coffee",
+			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/SitePlanScreen.coffee",
 			"settings":
 			{
-				"buffer_size": 2017,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/MainMenuScreen.coffee",
-			"settings":
-			{
-				"buffer_size": 3338,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "https://id.linkedin.com/in/irwansyahirwansyah",
-			"settings":
-			{
-				"buffer_size": 45,
+				"buffer_size": 435,
 				"line_ending": "Unix",
-				"name": "https://id.linkedin.com/in/irwansyahirwansyah"
-			}
-		},
-		{
-			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/ScreenWithTopBarMenu.coffee",
-			"settings":
-			{
-				"buffer_size": 2390,
-				"line_ending": "Unix"
+				"name": "SitePlanScreen.coffee"
 			}
 		}
 	],
@@ -663,13 +639,17 @@
 	],
 	"file_history":
 	[
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/NorthViewScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/DayViewScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/SouthViewScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/TopMenuBar.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/ScreenWithTopBarMenu.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/GalleryScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/LocationScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/AboutScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/tablet/ApplicationWindow.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/FullScreenGallery.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/MainMenuScreen.coffee",
-		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/TopMenuBar.coffee",
-		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/GalleryScreen.coffee",
-		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/ScreenWithTopBarMenu.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/About2.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/tablet/ScreenWithTopBarMenu.js",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/tablet/IntroScreen.js",
@@ -786,11 +766,7 @@
 		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/blank/www/screens/Intro1Layer.js",
 		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/blank/www/screens/Intro1Layer.coffee",
 		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/blank/www/screens/ScreenIntro.coffee",
-		"/Users/irwansyah/PROJECTS/irwan-ACNA-Website/sites/default/files/forena-reports/membership_source_total_members.sql",
-		"/Users/irwansyah/PROJECTS/irwan-ACNA-Website/sites/default/sql/total_members_active_1mo_grace.sql",
-		"/Users/irwansyah/PROJECTS/irwan-ACNA-Website/sites/default/sql/membership_by_source.sql",
-		"/Users/irwansyah/PROJECTS/irwan-ACNA-Website/sites/all/modules/forena/repos/sample/distribution.sql",
-		"/Users/irwansyah/PROJECTS/irwan-ACNA-Website/sites/all/modules/forena/repos/reports/sample/state_breakdown.frx"
+		"/Users/irwansyah/PROJECTS/irwan-ACNA-Website/sites/default/files/forena-reports/membership_source_total_members.sql"
 	],
 	"find":
 	{
@@ -819,6 +795,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"NorthView",
+			"NorthViewScreen",
+			"northViewScreen",
+			"NorthView",
+			"ButtonNight",
+			"buttonNight",
+			"@view",
+			"view",
+			"View",
+			"view",
+			"ButtonNorthView",
+			"buttonNorthView",
+			"top:",
+			"265",
+			"238",
 			"newSubScreen",
 			"View",
 			"view",
@@ -931,22 +922,7 @@
 			"MailingState_logAlreadyExtended",
 			"processsendem",
 			"MailingState_processAlreadyExtended",
-			"MailingState_processSendEmail",
-			"EmailSendingCron_processEachRowsInsideTheMailingStatesTable",
-			"mail_address",
-			"audiclubna_send_membership_emails",
-			"audiclubna_send_membership_emails\n",
-			"MailingState_processSendEmail",
-			"MailingState_logProcessingError",
-			"post",
-			"postema",
-			"post",
-			"audiclubna_send_membership_emails",
-			"->mail",
-			"mail_nid",
-			"email_nid",
-			"audiclubna_send_membership_emails",
-			"postemailfor"
+			"MailingState_processSendEmail"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -964,118 +940,30 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/LocationScreen.coffee",
+					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/FloorplanScreen.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 467,
+						"buffer_size": 3609,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								390,
-								390
+								168,
+								168
 							]
 						],
 						"settings":
 						{
-							"auto_name": "LocationScreen.coffee",
+							"auto_name": "FloorplanScreen.coffee",
 							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/TopMenuBar.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2017,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1907,
-								1907
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 524.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/MainMenuScreen.coffee",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 3338,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 1025.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 45,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								45,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_name": "https://id.linkedin.com/in/irwansyahirwansyah",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1085,33 +973,32 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/ScreenWithTopBarMenu.coffee",
+					"buffer": 1,
+					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/SitePlanScreen.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2390,
+						"buffer_size": 435,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1370,
-								1370
+								113,
+								113
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"auto_name": "SitePlanScreen.coffee",
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 522.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
