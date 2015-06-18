@@ -148,6 +148,66 @@ class HighZoneScreen
         roomScreen = new RoomScreen(options).init()
 
         @assignToCurrentSubscreen roomScreen
+
+    show3BedroomScreen: () =>
+        options =             
+            imageInfos: [
+                {
+                    imageName: "HighZone-3Bedroom-RK.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: false
+                }                
+                {
+                    imageName: "HighZone-3Bedroom-RK-2.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: false
+                }        
+                {
+                    imageName: "HighZone-3Bedroom-RK-3.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: false
+                }
+                
+            ]
+        roomScreen = new RoomScreen(options).init()
+
+        @assignToCurrentSubscreen roomScreen     
+
+    show3BedroomStudyScreen: () =>
+        options =             
+            imageInfos: [
+                {
+                    imageName: "HighZone-3BedroomStudy-OPNM.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: false
+                }                
+                {
+                    imageName: "HighZone-3BedroomStudy-EF.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: true
+                }        
+                {
+                    imageName: "HighZone-3BedroomStudy-CDGH.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: true
+                }
+                
+            ]
+        roomScreen = new RoomScreen(options).init()
+
+        @assignToCurrentSubscreen roomScreen                
     addClickEvent:(button)=>
         button.addEventListener "click", =>
             if button.button_id is 0
@@ -155,6 +215,10 @@ class HighZoneScreen
 
             if button.button_id is 1
                 @show2BedroomScreen()
+            if button.button_id is 2
+                @show3BedroomScreen()
+            if button.button_id is 4
+                @show3BedroomStudyScreen()
 
     init: () =>
 
@@ -167,6 +231,7 @@ class HighZoneScreen
         @
 
     play: () =>
+        @show1BedroomScreen()
 
     relayout: () =>
         @scrollView.top = @toolbarView.top + @toolbarView.height
