@@ -153,31 +153,41 @@ class LowZoneScreen
         options =             
             imageInfos: [
                 {
-                    imageName: "LowZone-3BedroomStudy-OPNM.png"
+                    imageName: "LowZone-3BedroomStudy-NM.png"
                     dayViewRow1:
                         type: "ROW1"                        
                         visible: true
                         is_southview: false
                 }                
                 {
-                    imageName: "LowZone-3BedroomStudy-EF.png"
+                    imageName: "LowZone-3BedroomStudy-GH.png"
                     dayViewRow1:
                         type: "ROW1"                        
                         visible: true
                         is_southview: true
                 }        
-                {
-                    imageName: "LowZone-3BedroomStudy-CDGH.png"
-                    dayViewRow1:
-                        type: "ROW1"                        
-                        visible: true
-                        is_southview: true
-                }
                 
             ]
         roomScreen = new RoomScreen(options).init()
 
         @assignToCurrentSubscreen roomScreen                
+
+    show4BedroomStudyScreen: () =>
+        options =             
+            imageInfos: [
+                {
+                    imageName: "LowZone-4BedroomStudy-LK.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: false
+                }                
+                
+            ]
+        roomScreen = new RoomScreen(options).init()
+
+        @assignToCurrentSubscreen roomScreen                
+
     addClickEvent:(button)=>
         button.addEventListener "click", =>
             if button.button_id is 0
@@ -187,6 +197,8 @@ class LowZoneScreen
                 @show2BedroomScreen()
             if button.button_id is 2
                 @show3BedroomScreen()
+            if button.button_id is 3
+                @show4BedroomStudyScreen()
             if button.button_id is 4
                 @show3BedroomStudyScreen()
 

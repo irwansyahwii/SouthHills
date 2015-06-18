@@ -11,6 +11,7 @@
       this.play = bind(this.play, this);
       this.init = bind(this.init, this);
       this.addClickEvent = bind(this.addClickEvent, this);
+      this.show4BedroomStudyScreen = bind(this.show4BedroomStudyScreen, this);
       this.show3BedroomStudyScreen = bind(this.show3BedroomStudyScreen, this);
       this.show3BedroomScreen = bind(this.show3BedroomScreen, this);
       this.show2BedroomScreen = bind(this.show2BedroomScreen, this);
@@ -179,25 +180,36 @@
       options = {
         imageInfos: [
           {
-            imageName: "LowZone-3BedroomStudy-OPNM.png",
+            imageName: "LowZone-3BedroomStudy-NM.png",
             dayViewRow1: {
               type: "ROW1",
               visible: true,
               is_southview: false
             }
           }, {
-            imageName: "LowZone-3BedroomStudy-EF.png",
+            imageName: "LowZone-3BedroomStudy-GH.png",
             dayViewRow1: {
               type: "ROW1",
               visible: true,
               is_southview: true
             }
-          }, {
-            imageName: "LowZone-3BedroomStudy-CDGH.png",
+          }
+        ]
+      };
+      roomScreen = new RoomScreen(options).init();
+      return this.assignToCurrentSubscreen(roomScreen);
+    };
+
+    LowZoneScreen.prototype.show4BedroomStudyScreen = function() {
+      var options, roomScreen;
+      options = {
+        imageInfos: [
+          {
+            imageName: "LowZone-4BedroomStudy-LK.png",
             dayViewRow1: {
               type: "ROW1",
               visible: true,
-              is_southview: true
+              is_southview: false
             }
           }
         ]
@@ -217,6 +229,9 @@
           }
           if (button.button_id === 2) {
             _this.show3BedroomScreen();
+          }
+          if (button.button_id === 3) {
+            _this.show4BedroomStudyScreen();
           }
           if (button.button_id === 4) {
             return _this.show3BedroomStudyScreen();
