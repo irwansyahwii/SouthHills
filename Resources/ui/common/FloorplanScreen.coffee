@@ -1,6 +1,7 @@
 SitePlanScreen = require("/ui/common/SitePlanScreen")
 NorthViewScreen = require("/ui/common/NorthViewScreen")
 HighZoneScreen = require("/ui/common/HighZoneScreen")
+LowZoneScreen = require("/ui/common/LowZoneScreen")
 
 
 BUTTON_WIDTH = 286
@@ -101,10 +102,16 @@ class FloorplanScreen
         highZoneScreen = new HighZoneScreen().init()
         @assignToCurrentSubscreen highZoneScreen
 
+    showLowZoneScreen: () =>
+        lowZoneScreen = new LowZoneScreen().init()
+        @assignToCurrentSubscreen lowZoneScreen
+
     addClickEventToButton: (button) =>
         button.addEventListener "click", =>
             if button.button_id is 0
                 @showSitePlanScreen()
+            if button.button_id is 1
+                @showLowZoneScreen()
             if button.button_id is 2
                 @showHighZoneScreen()
             if button.button_id is 3
