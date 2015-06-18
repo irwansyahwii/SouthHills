@@ -4,8 +4,40 @@
 		"selected_items":
 		[
 			[
+				"ima",
+				"imageName"
+			],
+			[
+				"im",
+				"imageInfo"
+			],
+			[
+				"image",
+				"imageInfo"
+			],
+			[
+				"ro",
+				"roomViews"
+			],
+			[
+				"ims",
+				"imageNames"
+			],
+			[
 				"vi",
-				"visible"
+				"view"
+			],
+			[
+				"butt",
+				"button"
+			],
+			[
+				"bu",
+				"button1Bedroom"
+			],
+			[
+				"add",
+				"addClickEvent"
 			],
 			[
 				"Hig",
@@ -28,14 +60,6 @@
 				"contentWidth"
 			],
 			[
-				"ima",
-				"image_name"
-			],
-			[
-				"image",
-				"imageName"
-			],
-			[
 				"Da",
 				"DayViewScreen"
 			],
@@ -56,20 +80,8 @@
 				"imageName"
 			],
 			[
-				"bu",
-				"button_id"
-			],
-			[
-				"add",
-				"addClickEventToButton"
-			],
-			[
 				"nor",
 				"northViewScreen"
-			],
-			[
-				"butt",
-				"button"
 			],
 			[
 				"ad",
@@ -102,10 +114,6 @@
 			[
 				"on",
 				"onThumbImageClicked"
-			],
-			[
-				"im",
-				"imgInfo"
 			],
 			[
 				"a",
@@ -506,14 +514,6 @@
 			[
 				"EmailSe",
 				"EmailSendingCron_insertToMemberEmailSendingState"
-			],
-			[
-				"fo",
-				"foreach	foreach …"
-			],
-			[
-				"arr",
-				"array	$… = array (…)"
 			]
 		]
 	},
@@ -621,12 +621,14 @@
 	],
 	"file_history":
 	[
-		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/RoomScreen.coffee",
-		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/FloorplanScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/DayViewScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/HighZoneScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/RoomScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/RoomViewButton.coffee",
+		"/Users/irwansyah/Desktop/buzzbuddies/'use strict';.js",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/FloorplanScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/SitePlanScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/NorthViewScreen.coffee",
-		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/DayViewScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/SouthViewScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/TopMenuBar.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/ScreenWithTopBarMenu.coffee",
@@ -746,13 +748,11 @@
 		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-App/www/js/screens/Intro1_1024_614.coffee",
 		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-App/www/js/screens/ScreenIntro.coffee",
 		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-App/www/js/screens/Intro1_1024.coffee",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-App/www/js/screens/Intro1Layer.coffee",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/blank/www/index.html",
-		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-updated.framer/blank/www/framer/background.png"
+		"/Users/irwansyah/PROJECTS/Bentuk/PAI/PAI-App/www/js/screens/Intro1Layer.coffee"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -777,6 +777,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"imageName",
+			"imageNames",
+			"1Bedroon",
+			"loginservice",
 			"dayViewRow1",
 			"Button3Bedroom",
 			"button3Bedroom",
@@ -900,11 +904,7 @@
 			"inside audiclubna_postEmailFor",
 			"MailingState_updateState",
 			"db_query",
-			"current_month_year",
-			"MailingState_updateLastUpdatedInfo",
-			"updatelast",
-			".products_purchase_id",
-			"MAILING_CRON_LOGS_TABLE_NAME"
+			"current_month_year"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1328,7 +1328,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 335.0,
+	"side_bar_width": 388.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

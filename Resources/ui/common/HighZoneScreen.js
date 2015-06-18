@@ -11,6 +11,7 @@
       this.play = bind(this.play, this);
       this.init = bind(this.init, this);
       this.addClickEvent = bind(this.addClickEvent, this);
+      this.show2BedroomScreen = bind(this.show2BedroomScreen, this);
       this.show1BedroomScreen = bind(this.show1BedroomScreen, this);
       this.assignToCurrentSubscreen = bind(this.assignToCurrentSubscreen, this);
       this.getSubscreenHeight = bind(this.getSubscreenHeight, this);
@@ -96,11 +97,69 @@
     HighZoneScreen.prototype.show1BedroomScreen = function() {
       var options, roomScreen;
       options = {
-        dayViewRow1: {
-          visible: true,
-          is_southview: false
-        },
-        imageNames: ["HighZone-1Bedroom-QL.png", "HighZone-1Bedroom-QPONML-1.png", "HighZone-1Bedroom-QPONML-2.png"]
+        imageInfos: [
+          {
+            imageName: "HighZone-1Bedroom-QL.png",
+            dayViewRow1: {
+              type: "ROW1",
+              visible: true,
+              is_southview: false
+            }
+          }, {
+            imageName: "HighZone-1Bedroom-QPONML-1.png",
+            dayViewRow1: {
+              type: "ROW1",
+              visible: true,
+              is_southview: false
+            }
+          }, {
+            imageName: "HighZone-1Bedroom-QPONML-2.png",
+            dayViewRow1: {
+              type: "ROW1",
+              visible: true,
+              is_southview: false
+            }
+          }
+        ]
+      };
+      roomScreen = new RoomScreen(options).init();
+      return this.assignToCurrentSubscreen(roomScreen);
+    };
+
+    HighZoneScreen.prototype.show2BedroomScreen = function() {
+      var options, roomScreen;
+      options = {
+        imageInfos: [
+          {
+            imageName: "HighZone-2Bedroom-AJ.png",
+            dayViewRow1: {
+              type: "ROW1",
+              visible: true,
+              is_southview: true
+            }
+          }, {
+            imageName: "HighZone-2Bedroom-CDEFGH-1.png",
+            dayViewRow1: {
+              type: "ROW1",
+              visible: true,
+              is_southview: true
+            }
+          }, {
+            imageName: "HighZone-2Bedroom-CDEFGH-2.png",
+            dayViewRow1: {
+              type: "ROW1",
+              visible: true,
+              is_southview: true
+            }
+          }, {
+            imageName: "HighZone-2Bedroom-AJ.png",
+            dayViewRow1: {
+              type: "ROW1",
+              visible: true,
+              is_southview: true
+            }
+          }
+        ]
       };
       roomScreen = new RoomScreen(options).init();
       return this.assignToCurrentSubscreen(roomScreen);
@@ -110,7 +169,10 @@
       return button.addEventListener("click", (function(_this) {
         return function() {
           if (button.button_id === 0) {
-            return _this.show1BedroomScreen();
+            _this.show1BedroomScreen();
+          }
+          if (button.button_id === 1) {
+            return _this.show2BedroomScreen();
           }
         };
       })(this));

@@ -31,6 +31,9 @@ class ApplicationWindow
                         self.add fullscreenGallery
                         fullscreenGallery.play()
 
+                topBarScreen.onDayView = (image) =>
+
+
                 self.add topBarScreen
                 topBarScreen.play()
                 topBarScreen.click button_id

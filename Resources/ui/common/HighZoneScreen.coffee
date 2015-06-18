@@ -82,25 +82,79 @@ class HighZoneScreen
         @view.add newSubScreen
 
     show1BedroomScreen: () =>
-        options = 
-            dayViewRow1:
-                visible: true
-                is_southview: false
-
-            imageNames: [
-                "HighZone-1Bedroom-QL.png"
-                "HighZone-1Bedroom-QPONML-1.png"
-                "HighZone-1Bedroom-QPONML-2.png"
+        options =             
+            imageInfos: [
+                {
+                    imageName: "HighZone-1Bedroom-QL.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: false
+                }                
+                {
+                    imageName: "HighZone-1Bedroom-QPONML-1.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: false
+                }        
+                {
+                    imageName: "HighZone-1Bedroom-QPONML-2.png"    
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: false
+                }
+                
+                
             ]
         roomScreen = new RoomScreen(options).init()
 
         @assignToCurrentSubscreen roomScreen
 
+    show2BedroomScreen: () =>
+        options =             
+            imageInfos: [
+                {
+                    imageName: "HighZone-2Bedroom-AJ.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: true
+                }                
+                {
+                    imageName: "HighZone-2Bedroom-CDEFGH-1.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: true
+                }        
+                {
+                    imageName: "HighZone-2Bedroom-CDEFGH-2.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: true
+                }
+                {
+                    imageName: "HighZone-2Bedroom-AJ.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: true
+                }                                
+                
+            ]
+        roomScreen = new RoomScreen(options).init()
+
+        @assignToCurrentSubscreen roomScreen
     addClickEvent:(button)=>
         button.addEventListener "click", =>
             if button.button_id is 0
                 @show1BedroomScreen()
 
+            if button.button_id is 1
+                @show2BedroomScreen()
 
     init: () =>
 
