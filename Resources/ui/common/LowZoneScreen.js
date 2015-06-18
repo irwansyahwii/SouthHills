@@ -126,32 +126,28 @@
       options = {
         imageInfos: [
           {
-            imageName: "HighZone-2Bedroom-AJ.png",
+            imageName: "LowZone-2Bedroom-QLCH.png",
             dayViewRow1: {
               type: "ROW1",
               visible: true,
               is_southview: true
+            },
+            dayViewRow2: {
+              type: "ROW2",
+              visible: true,
+              is_southview: false
             }
           }, {
-            imageName: "HighZone-2Bedroom-CDEFGH-1.png",
+            imageName: "LowZone-2Bedroom-PONMDEFG.png",
             dayViewRow1: {
               type: "ROW1",
               visible: true,
               is_southview: true
-            }
-          }, {
-            imageName: "HighZone-2Bedroom-CDEFGH-2.png",
-            dayViewRow1: {
-              type: "ROW1",
+            },
+            dayViewRow2: {
+              type: "ROW2",
               visible: true,
-              is_southview: true
-            }
-          }, {
-            imageName: "HighZone-2Bedroom-AJ.png",
-            dayViewRow1: {
-              type: "ROW1",
-              visible: true,
-              is_southview: true
+              is_southview: false
             }
           }
         ]
@@ -165,21 +161,21 @@
       options = {
         imageInfos: [
           {
-            imageName: "HighZone-3Bedroom-RK.png",
+            imageName: "LowZone-3Bedroom-RK.png",
             dayViewRow1: {
               type: "ROW1",
               visible: true,
               is_southview: false
             }
           }, {
-            imageName: "HighZone-3Bedroom-RK-2.png",
+            imageName: "LowZone-3Bedroom-RK-2.png",
             dayViewRow1: {
               type: "ROW1",
               visible: true,
               is_southview: false
             }
           }, {
-            imageName: "HighZone-3Bedroom-RK-3.png",
+            imageName: "LowZone-3Bedroom-RK-3.png",
             dayViewRow1: {
               type: "ROW1",
               visible: true,
@@ -197,21 +193,21 @@
       options = {
         imageInfos: [
           {
-            imageName: "HighZone-3BedroomStudy-OPNM.png",
+            imageName: "LowZone-3BedroomStudy-OPNM.png",
             dayViewRow1: {
               type: "ROW1",
               visible: true,
               is_southview: false
             }
           }, {
-            imageName: "HighZone-3BedroomStudy-EF.png",
+            imageName: "LowZone-3BedroomStudy-EF.png",
             dayViewRow1: {
               type: "ROW1",
               visible: true,
               is_southview: true
             }
           }, {
-            imageName: "HighZone-3BedroomStudy-CDGH.png",
+            imageName: "LowZone-3BedroomStudy-CDGH.png",
             dayViewRow1: {
               type: "ROW1",
               visible: true,

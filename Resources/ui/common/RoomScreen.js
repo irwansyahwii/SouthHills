@@ -33,12 +33,22 @@
           visible: false,
           is_southview: false
         };
+        imageInfo.dayViewRow2 = imageInfo.dayViewRow2 || {
+          visible: false,
+          is_southview: false
+        };
         wrapperScroll.add(imageView);
         roomView.add(wrapperScroll);
         if (imageInfo.dayViewRow1.visible) {
           roomViewButton = new RoomViewButton(imageInfo.dayViewRow1).init();
           roomViewButton.view.left = 68 / 2;
           roomViewButton.view.top = 1018 / 2;
+          roomView.add(roomViewButton.view);
+        }
+        if (imageInfo.dayViewRow2.visible) {
+          roomViewButton = new RoomViewButton(imageInfo.dayViewRow2).init();
+          roomViewButton.view.left = 68 / 2;
+          roomViewButton.view.top = 783 / 2;
           roomView.add(roomViewButton.view);
         }
         this.roomViews.push(roomView);
