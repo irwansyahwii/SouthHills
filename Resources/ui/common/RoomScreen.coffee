@@ -20,7 +20,9 @@ class RoomScreen
 
         @imageInfos = options.imageInfos || []
 
-        console.log JSON.stringify(@imageInfos)
+        # console.log JSON.stringify(@imageInfos)
+
+        @onButtonClicked = null
 
         @roomViews = []
         for imageInfo in @imageInfos            
@@ -42,13 +44,15 @@ class RoomScreen
             if imageInfo.dayViewRow1.visible                
                 roomViewButton = new RoomViewButton(imageInfo.dayViewRow1).init()
                 roomViewButton.view.left = 68/2
-                roomViewButton.view.top = 1018/2
+                roomViewButton.view.top = 1018/2      
+                roomViewButton.onButtonClicked = @raiseOnButtonClicked          
                 roomView.add roomViewButton.view
 
             if imageInfo.dayViewRow2.visible                
                 roomViewButton = new RoomViewButton(imageInfo.dayViewRow2).init()
                 roomViewButton.view.left = 68/2
                 roomViewButton.view.top = 783/2
+                roomViewButton.onButtonClicked = @raiseOnButtonClicked
                 roomView.add roomViewButton.view
 
             @roomViews.push roomView
@@ -56,6 +60,11 @@ class RoomScreen
         @scrollView.views = @roomViews
 
 
+
+
+    raiseOnButtonClicked: (e) =>
+        if @onButtonClicked isnt null
+            @onButtonClicked(e)
 
     init: () =>
         @

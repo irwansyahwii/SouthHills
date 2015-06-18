@@ -8,6 +8,7 @@
       this.relayout = bind(this.relayout, this);
       this.play = bind(this.play, this);
       this.init = bind(this.init, this);
+      this.addClickEvent = bind(this.addClickEvent, this);
       var day_image, night_image;
       this.view = Ti.UI.createView({
         background: "red",
@@ -34,20 +35,40 @@
         width: 226 / 2,
         height: 147 / 2,
         left: 16 / 2,
-        top: 31 / 2
+        top: 31 / 2,
+        button_id: 0
       });
       this.view.add(this.buttonDay);
-      this.buttonDay = Ti.UI.createButton({
+      this.buttonNight = Ti.UI.createButton({
         backgroundImage: night_image,
         width: 226 / 2,
         height: 147 / 2,
         left: 254 / 2,
-        top: 31 / 2
+        top: 31 / 2,
+        button_id: 1
       });
-      this.view.add(this.buttonDay);
+      this.view.add(this.buttonNight);
+      this.onButtonClicked = null;
     }
 
+    RoomViewButton.prototype.addClickEvent = function(button) {
+      return button.addEventListener("click", (function(_this) {
+        return function() {
+          var eventInfo;
+          eventInfo = {
+            button_id: button.button_id,
+            is_southview: _this.is_southview
+          };
+          if (_this.onButtonClicked) {
+            return _this.onButtonClicked(eventInfo);
+          }
+        };
+      })(this));
+    };
+
     RoomViewButton.prototype.init = function() {
+      this.addClickEvent(this.buttonDay);
+      this.addClickEvent(this.buttonNight);
       return this;
     };
 

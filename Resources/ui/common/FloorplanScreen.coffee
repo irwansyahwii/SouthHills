@@ -2,6 +2,7 @@ SitePlanScreen = require("/ui/common/SitePlanScreen")
 NorthViewScreen = require("/ui/common/NorthViewScreen")
 HighZoneScreen = require("/ui/common/HighZoneScreen")
 LowZoneScreen = require("/ui/common/LowZoneScreen")
+DayViewScreen = require("/ui/common/DayViewScreen")
 
 
 BUTTON_WIDTH = 286
@@ -98,12 +99,52 @@ class FloorplanScreen
         southViewScreen = new NorthViewScreen("SouthView").init()
         @assignToCurrentSubscreen southViewScreen
 
+    showDayViewScreen: (e) =>
+
+        imageName = ""
+
+        button = e
+        
+        if button.button_id is 0
+            if button.is_southview
+                imageName = "SouthView-Day"
+            else
+                imageName = "NorthView-Day"
+        if button.button_id is 1
+            if button.is_southview
+                imageName = "SouthView-Night"
+            else
+                imageName = "NorthView-Night"
+
+        width= 0
+        height = 0
+        if imageName is "NorthView-Day"
+            width = 2768
+            height = 1307
+        if imageName is "NorthView-Night"
+            width = 3570
+            height = 1312
+        if imageName is "SouthView-Day"
+            width = 2962
+            height = 1305
+        if imageName is "SouthView-Night"
+            width = 2780
+            height = 1312
+
+        dayViewScreen = new DayViewScreen(imageName, width, height).init()
+        @assignToCurrentSubscreen dayViewScreen        
+
+
     showHighZoneScreen: () =>
         highZoneScreen = new HighZoneScreen().init()
+        highZoneScreen.onDayViewClicked = (e) =>
+            @showDayViewScreen(e)
         @assignToCurrentSubscreen highZoneScreen
 
     showLowZoneScreen: () =>
         lowZoneScreen = new LowZoneScreen().init()
+        lowZoneScreen.onDayViewClicked = (e) =>
+            @showDayViewScreen(e)
         @assignToCurrentSubscreen lowZoneScreen
 
     addClickEventToButton: (button) =>

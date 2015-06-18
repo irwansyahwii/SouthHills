@@ -63,6 +63,7 @@ class LowZoneScreen
             top: @toolbarView.top + @toolbarView.height
 
         @subScreen = null
+        @onDayViewClicked = null
 
     getSubscreenHeight: () =>
         @view.height - @toolbarView.height
@@ -79,6 +80,8 @@ class LowZoneScreen
         newSubScreen.play()
 
         @subScreen = newSubScreen
+        @subScreen.onButtonClicked = @onDayViewClicked
+
         @view.add newSubScreen
 
     show1BedroomScreen: () =>

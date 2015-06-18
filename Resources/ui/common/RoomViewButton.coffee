@@ -29,19 +29,39 @@ class RoomViewButton
             height: 147/2
             left: 16/2
             top: 31/2
+            button_id: 0
 
         @view.add @buttonDay
 
-        @buttonDay = Ti.UI.createButton
+        @buttonNight = Ti.UI.createButton
             backgroundImage: night_image
             width: 226/2
             height: 147/2
             left: 254/2
             top: 31/2
+            button_id: 1
 
-        @view.add @buttonDay
+        @view.add @buttonNight
+
+        @onButtonClicked = null
+
+    addClickEvent: (button) =>
+        button.addEventListener "click", =>
+            eventInfo =
+                button_id: button.button_id
+                is_southview: @is_southview
+
+            
+            if @onButtonClicked
+                @onButtonClicked(eventInfo)
+
+
 
     init: () =>
+        @addClickEvent @buttonDay
+        @addClickEvent @buttonNight
+
+
         @
 
     play: () =>

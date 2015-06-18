@@ -10,12 +10,13 @@
       this.relayout = bind(this.relayout, this);
       this.play = bind(this.play, this);
       this.init = bind(this.init, this);
+      this.raiseOnButtonClicked = bind(this.raiseOnButtonClicked, this);
       var i, imageInfo, imageView, len, ref, roomView, roomViewButton, wrapperScroll;
       this.view = Ti.UI.createView();
       this.scrollView = Ti.UI.createScrollableView();
       this.view.add(this.scrollView);
       this.imageInfos = options.imageInfos || [];
-      console.log(JSON.stringify(this.imageInfos));
+      this.onButtonClicked = null;
       this.roomViews = [];
       ref = this.imageInfos;
       for (i = 0, len = ref.length; i < len; i++) {
@@ -43,18 +44,26 @@
           roomViewButton = new RoomViewButton(imageInfo.dayViewRow1).init();
           roomViewButton.view.left = 68 / 2;
           roomViewButton.view.top = 1018 / 2;
+          roomViewButton.onButtonClicked = this.raiseOnButtonClicked;
           roomView.add(roomViewButton.view);
         }
         if (imageInfo.dayViewRow2.visible) {
           roomViewButton = new RoomViewButton(imageInfo.dayViewRow2).init();
           roomViewButton.view.left = 68 / 2;
           roomViewButton.view.top = 783 / 2;
+          roomViewButton.onButtonClicked = this.raiseOnButtonClicked;
           roomView.add(roomViewButton.view);
         }
         this.roomViews.push(roomView);
       }
       this.scrollView.views = this.roomViews;
     }
+
+    RoomScreen.prototype.raiseOnButtonClicked = function(e) {
+      if (this.onButtonClicked !== null) {
+        return this.onButtonClicked(e);
+      }
+    };
 
     RoomScreen.prototype.init = function() {
       return this;

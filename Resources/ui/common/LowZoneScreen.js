@@ -77,6 +77,7 @@
         top: this.toolbarView.top + this.toolbarView.height
       });
       this.subScreen = null;
+      this.onDayViewClicked = null;
     }
 
     LowZoneScreen.prototype.getSubscreenHeight = function() {
@@ -94,6 +95,7 @@
       newSubScreen.relayout();
       newSubScreen.play();
       this.subScreen = newSubScreen;
+      this.subScreen.onButtonClicked = this.onDayViewClicked;
       return this.view.add(newSubScreen);
     };
 
