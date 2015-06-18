@@ -167,20 +167,6 @@
               visible: true,
               is_southview: false
             }
-          }, {
-            imageName: "LowZone-3Bedroom-RK-2.png",
-            dayViewRow1: {
-              type: "ROW1",
-              visible: true,
-              is_southview: false
-            }
-          }, {
-            imageName: "LowZone-3Bedroom-RK-3.png",
-            dayViewRow1: {
-              type: "ROW1",
-              visible: true,
-              is_southview: false
-            }
           }
         ]
       };
