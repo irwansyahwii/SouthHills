@@ -84,16 +84,21 @@ class HighZoneScreen
         @subScreen.onButtonClicked = @onDayViewClicked
         @view.add newSubScreen
 
+    showBedroomScreen: (options) =>
+        roomScreen = new RoomScreen(options).init()
+
+        @assignToCurrentSubscreen roomScreen
+
     show1BedroomScreen: () =>
         options =             
             imageInfos: [
-                {
-                    imageName: "HighZone-1Bedroom-QL.png"
-                    dayViewRow1:
-                        type: "ROW1"                        
-                        visible: true
-                        is_southview: false
-                }                
+                # {
+                #     imageName: "HighZone-1Bedroom-QL.png"
+                #     dayViewRow1:
+                #         type: "ROW1"                        
+                #         visible: true
+                #         is_southview: false
+                # }                
                 {
                     imageName: "HighZone-1Bedroom-QPONML-1.png"
                     dayViewRow1:
@@ -111,15 +116,13 @@ class HighZoneScreen
                 
                 
             ]
-        roomScreen = new RoomScreen(options).init()
-
-        @assignToCurrentSubscreen roomScreen
+        @showBedroomScreen options
 
     show2BedroomScreen: () =>
         options =             
             imageInfos: [
                 {
-                    imageName: "HighZone-2Bedroom-AJ.png"
+                    imageName: "HighZone-2Bedroom-AJ-2.png"
                     dayViewRow1:
                         type: "ROW1"                        
                         visible: true
@@ -139,29 +142,28 @@ class HighZoneScreen
                         visible: true
                         is_southview: true
                 }
-                {
-                    imageName: "HighZone-2Bedroom-AJ.png"
-                    dayViewRow1:
-                        type: "ROW1"                        
-                        visible: true
-                        is_southview: true
-                }                                
+                # {
+                #     imageName: "HighZone-2Bedroom-AJ.png"
+                #     dayViewRow1:
+                #         type: "ROW1"                        
+                #         visible: true
+                #         is_southview: true
+                # }                                
                 
             ]
-        roomScreen = new RoomScreen(options).init()
+        @showBedroomScreen options
 
-        @assignToCurrentSubscreen roomScreen
 
     show3BedroomScreen: () =>
         options =             
             imageInfos: [
-                {
-                    imageName: "HighZone-3Bedroom-RK.png"
-                    dayViewRow1:
-                        type: "ROW1"                        
-                        visible: true
-                        is_southview: false
-                }                
+                # {
+                #     imageName: "HighZone-3Bedroom-RK.png"
+                #     dayViewRow1:
+                #         type: "ROW1"                        
+                #         visible: true
+                #         is_southview: false
+                # }                
                 {
                     imageName: "HighZone-3Bedroom-RK-2.png"
                     dayViewRow1:
@@ -178,9 +180,7 @@ class HighZoneScreen
                 }
                 
             ]
-        roomScreen = new RoomScreen(options).init()
-
-        @assignToCurrentSubscreen roomScreen     
+        @showBedroomScreen options
 
     show3BedroomStudyScreen: () =>
         options =             
@@ -208,9 +208,55 @@ class HighZoneScreen
                 }
                 
             ]
-        roomScreen = new RoomScreen(options).init()
+        @showBedroomScreen options
 
-        @assignToCurrentSubscreen roomScreen                
+    showSplitUnitBedroomScreen: () =>
+        options =             
+            imageInfos: [
+                {
+                    imageName: "HighZone-SplitUnit-1Bedroom-QL.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: false
+                }                
+                {
+                    imageName: "HighZone-SplitUnit-2Bedroom-AJ.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: true
+                }        
+                {
+                    imageName: "HighZone-SplitUnit-3Bedroom-RK.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: false
+                }
+                {
+                    imageName: "HighZone-SplitUnit-3BedroomStudy-OPNM.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: false
+                }
+                {
+                    imageName: "HighZone-SplitUnit-3BedroomStudy-EF.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: false
+                }
+                {
+                    imageName: "HighZone-SplitUnit-3BedroomStudy-CDGH.png"
+                    dayViewRow1:
+                        type: "ROW1"                        
+                        visible: true
+                        is_southview: false
+                }                
+            ]
+        @showBedroomScreen options
     addClickEvent:(button)=>
         button.addEventListener "click", =>
             if button.button_id is 0
@@ -220,6 +266,8 @@ class HighZoneScreen
                 @show2BedroomScreen()
             if button.button_id is 2
                 @show3BedroomScreen()
+            if button.button_id is 3
+                @showSplitUnitBedroomScreen()
             if button.button_id is 4
                 @show3BedroomStudyScreen()
 

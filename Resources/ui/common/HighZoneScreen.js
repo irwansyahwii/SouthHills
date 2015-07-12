@@ -11,10 +11,12 @@
       this.play = bind(this.play, this);
       this.init = bind(this.init, this);
       this.addClickEvent = bind(this.addClickEvent, this);
+      this.showSplitUnitBedroomScreen = bind(this.showSplitUnitBedroomScreen, this);
       this.show3BedroomStudyScreen = bind(this.show3BedroomStudyScreen, this);
       this.show3BedroomScreen = bind(this.show3BedroomScreen, this);
       this.show2BedroomScreen = bind(this.show2BedroomScreen, this);
       this.show1BedroomScreen = bind(this.show1BedroomScreen, this);
+      this.showBedroomScreen = bind(this.showBedroomScreen, this);
       this.assignToCurrentSubscreen = bind(this.assignToCurrentSubscreen, this);
       this.getSubscreenHeight = bind(this.getSubscreenHeight, this);
       this.view = Ti.UI.createView();
@@ -98,18 +100,17 @@
       return this.view.add(newSubScreen);
     };
 
+    HighZoneScreen.prototype.showBedroomScreen = function(options) {
+      var roomScreen;
+      roomScreen = new RoomScreen(options).init();
+      return this.assignToCurrentSubscreen(roomScreen);
+    };
+
     HighZoneScreen.prototype.show1BedroomScreen = function() {
-      var options, roomScreen;
+      var options;
       options = {
         imageInfos: [
           {
-            imageName: "HighZone-1Bedroom-QL.png",
-            dayViewRow1: {
-              type: "ROW1",
-              visible: true,
-              is_southview: false
-            }
-          }, {
             imageName: "HighZone-1Bedroom-QPONML-1.png",
             dayViewRow1: {
               type: "ROW1",
@@ -126,16 +127,15 @@
           }
         ]
       };
-      roomScreen = new RoomScreen(options).init();
-      return this.assignToCurrentSubscreen(roomScreen);
+      return this.showBedroomScreen(options);
     };
 
     HighZoneScreen.prototype.show2BedroomScreen = function() {
-      var options, roomScreen;
+      var options;
       options = {
         imageInfos: [
           {
-            imageName: "HighZone-2Bedroom-AJ.png",
+            imageName: "HighZone-2Bedroom-AJ-2.png",
             dayViewRow1: {
               type: "ROW1",
               visible: true,
@@ -155,32 +155,17 @@
               visible: true,
               is_southview: true
             }
-          }, {
-            imageName: "HighZone-2Bedroom-AJ.png",
-            dayViewRow1: {
-              type: "ROW1",
-              visible: true,
-              is_southview: true
-            }
           }
         ]
       };
-      roomScreen = new RoomScreen(options).init();
-      return this.assignToCurrentSubscreen(roomScreen);
+      return this.showBedroomScreen(options);
     };
 
     HighZoneScreen.prototype.show3BedroomScreen = function() {
-      var options, roomScreen;
+      var options;
       options = {
         imageInfos: [
           {
-            imageName: "HighZone-3Bedroom-RK.png",
-            dayViewRow1: {
-              type: "ROW1",
-              visible: true,
-              is_southview: false
-            }
-          }, {
             imageName: "HighZone-3Bedroom-RK-2.png",
             dayViewRow1: {
               type: "ROW1",
@@ -197,12 +182,11 @@
           }
         ]
       };
-      roomScreen = new RoomScreen(options).init();
-      return this.assignToCurrentSubscreen(roomScreen);
+      return this.showBedroomScreen(options);
     };
 
     HighZoneScreen.prototype.show3BedroomStudyScreen = function() {
-      var options, roomScreen;
+      var options;
       options = {
         imageInfos: [
           {
@@ -229,8 +213,59 @@
           }
         ]
       };
-      roomScreen = new RoomScreen(options).init();
-      return this.assignToCurrentSubscreen(roomScreen);
+      return this.showBedroomScreen(options);
+    };
+
+    HighZoneScreen.prototype.showSplitUnitBedroomScreen = function() {
+      var options;
+      options = {
+        imageInfos: [
+          {
+            imageName: "HighZone-SplitUnit-1Bedroom-QL.png",
+            dayViewRow1: {
+              type: "ROW1",
+              visible: true,
+              is_southview: false
+            }
+          }, {
+            imageName: "HighZone-SplitUnit-2Bedroom-AJ.png",
+            dayViewRow1: {
+              type: "ROW1",
+              visible: true,
+              is_southview: true
+            }
+          }, {
+            imageName: "HighZone-SplitUnit-3Bedroom-RK.png",
+            dayViewRow1: {
+              type: "ROW1",
+              visible: true,
+              is_southview: false
+            }
+          }, {
+            imageName: "HighZone-SplitUnit-3BedroomStudy-OPNM.png",
+            dayViewRow1: {
+              type: "ROW1",
+              visible: true,
+              is_southview: false
+            }
+          }, {
+            imageName: "HighZone-SplitUnit-3BedroomStudy-EF.png",
+            dayViewRow1: {
+              type: "ROW1",
+              visible: true,
+              is_southview: false
+            }
+          }, {
+            imageName: "HighZone-SplitUnit-3BedroomStudy-CDGH.png",
+            dayViewRow1: {
+              type: "ROW1",
+              visible: true,
+              is_southview: false
+            }
+          }
+        ]
+      };
+      return this.showBedroomScreen(options);
     };
 
     HighZoneScreen.prototype.addClickEvent = function(button) {
@@ -244,6 +279,9 @@
           }
           if (button.button_id === 2) {
             _this.show3BedroomScreen();
+          }
+          if (button.button_id === 3) {
+            _this.showSplitUnitBedroomScreen();
           }
           if (button.button_id === 4) {
             return _this.show3BedroomStudyScreen();
