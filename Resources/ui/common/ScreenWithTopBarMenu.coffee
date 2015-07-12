@@ -21,6 +21,8 @@ class ScreenWithTopBarMenu
 
         @onDoubleTapped = null
 
+        @logoButtonClicked = null
+
     raiseOnDoubleTapped: (eventInfo) =>
         if @onDoubleTapped isnt null
             @onDoubleTapped(eventInfo)
@@ -80,6 +82,10 @@ class ScreenWithTopBarMenu
         floorPlanscreen = new FloorplanScreen().init()
         @assignToCurrentSubscreen floorPlanscreen
 
+    showMainMenuScreen: () =>
+        if @logoButtonClicked isnt null
+            @logoButtonClicked()
+
     click: (button_id) =>        
         if button_id is 0        
             @showAboutScreen()
@@ -92,5 +98,8 @@ class ScreenWithTopBarMenu
 
         if button_id is 3
             @showFloorplanScreen()
+
+        if button_id is 4
+            @showMainMenuScreen()
 
 module.exports = ScreenWithTopBarMenu

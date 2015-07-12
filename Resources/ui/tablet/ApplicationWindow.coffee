@@ -33,8 +33,12 @@ class ApplicationWindow
 
                 topBarScreen.onDayView = (image) =>
 
+                topBarScreen.logoButtonClicked = =>
+                    mainMenuScreen.view.remove topBarScreen.view
+                    mainMenuScreen.play()
 
-                self.add topBarScreen
+                # self.add topBarScreen
+                mainMenuScreen.view.add topBarScreen.view
                 topBarScreen.play()
                 topBarScreen.click button_id
 

@@ -23,6 +23,7 @@ class TopMenuBar
             backgroundImage: 'MenuBar-Logo.png'
             width: 99/2
             height: 102/2
+            button_id: 4
 
         @view.add @buttonLogo
 
@@ -69,6 +70,7 @@ class TopMenuBar
         @addClickListener @buttonGallery
         @addClickListener @buttonLocation
         @addClickListener @buttonPlans
+        @addClickListener @buttonLogo
 
         @
 

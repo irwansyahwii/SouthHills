@@ -4,8 +4,60 @@
 		"selected_items":
 		[
 			[
+				"bu",
+				"button"
+			],
+			[
+				"butt",
+				"button"
+			],
+			[
+				"lo",
+				"lowZoneScreen"
+			],
+			[
+				"on",
+				"onDayViewClicked"
+			],
+			[
+				"roo",
+				"roomViewButton"
+			],
+			[
+				"but",
+				"button"
+			],
+			[
+				"show",
+				"show4BedroomStudyScreen"
+			],
+			[
+				"sho",
+				"show1BedroomScreen"
+			],
+			[
 				"ima",
-				"imageName"
+				"imageInfos"
+			],
+			[
+				"ro",
+				"roomViewButton"
+			],
+			[
+				"vi",
+				"visible"
+			],
+			[
+				"day",
+				"dayViewRow1"
+			],
+			[
+				"Roo",
+				"RoomViewButton"
+			],
+			[
+				"Ro",
+				"RoomViewButton"
 			],
 			[
 				"im",
@@ -16,24 +68,8 @@
 				"imageInfo"
 			],
 			[
-				"ro",
-				"roomViews"
-			],
-			[
 				"ims",
 				"imageNames"
-			],
-			[
-				"vi",
-				"view"
-			],
-			[
-				"butt",
-				"button"
-			],
-			[
-				"bu",
-				"button1Bedroom"
 			],
 			[
 				"add",
@@ -46,14 +82,6 @@
 			[
 				"to",
 				"toolbarView"
-			],
-			[
-				"sho",
-				"showHighZoneScreen"
-			],
-			[
-				"but",
-				"button_id"
 			],
 			[
 				"con",
@@ -112,20 +140,8 @@
 				"large_scroll_view"
 			],
 			[
-				"on",
-				"onThumbImageClicked"
-			],
-			[
 				"a",
 				"assignToCurrentSubscreen"
-			],
-			[
-				"lo",
-				"LocationScreen"
-			],
-			[
-				"show",
-				"showLocationScreen"
 			],
 			[
 				"large",
@@ -498,27 +514,52 @@
 			[
 				"will",
 				"will_expired"
-			],
-			[
-				"fun",
-				"function"
-			],
-			[
-				"exis",
-				"exists_count"
-			],
-			[
-				"wil",
-				"will_expired"
-			],
-			[
-				"EmailSe",
-				"EmailSendingCron_insertToMemberEmailSendingState"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/RoomViewButton.coffee",
+			"settings":
+			{
+				"buffer_size": 1656,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/RoomScreen.coffee",
+			"settings":
+			{
+				"buffer_size": 2428,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/HighZoneScreen.coffee",
+			"settings":
+			{
+				"buffer_size": 7920,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/LowZoneScreen.coffee",
+			"settings":
+			{
+				"buffer_size": 7154,
+				"line_ending": "Unix",
+				"name": "LowZoneScreen.coffee"
+			}
+		},
+		{
+			"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/FloorplanScreen.coffee",
+			"settings":
+			{
+				"buffer_size": 5313,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -621,12 +662,13 @@
 	],
 	"file_history":
 	[
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/FloorplanScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/RoomScreen.coffee",
+		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/tablet/ApplicationWindow.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/DayViewScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/HighZoneScreen.coffee",
-		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/RoomScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/RoomViewButton.coffee",
 		"/Users/irwansyah/Desktop/buzzbuddies/'use strict';.js",
-		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/FloorplanScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/SitePlanScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/NorthViewScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/SouthViewScreen.coffee",
@@ -635,7 +677,6 @@
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/GalleryScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/LocationScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/AboutScreen.coffee",
-		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/tablet/ApplicationWindow.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/FullScreenGallery.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/MainMenuScreen.coffee",
 		"/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/About2.coffee",
@@ -777,6 +818,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"log",
+			"onDayViewClicked",
+			"button",
+			"HighZone",
+			"3Bedroom",
+			"CDEFGH",
+			"2Bedroom",
 			"imageName",
 			"imageNames",
 			"1Bedroon",
@@ -897,14 +945,7 @@
 			"DateUtils_getCurrentDateTime",
 			"user",
 			"user.",
-			"Apache Server at ",
-			"0010",
-			"current_month_year",
-			"EmailSendingCron_logsStartTime",
-			"inside audiclubna_postEmailFor",
-			"MailingState_updateState",
-			"db_query",
-			"current_month_year"
+			"Apache Server at "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -922,8 +963,156 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/RoomViewButton.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1656,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								324,
+								325
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/RoomScreen.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								411,
+								411
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/HighZoneScreen.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7920,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								72,
+								76
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/LowZoneScreen.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1860,
+								1860
+							]
+						],
+						"settings":
+						{
+							"auto_name": "LowZoneScreen.coffee",
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 896.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/irwansyah/PROJECTS/Titanium/South Hilss/Resources/ui/common/FloorplanScreen.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4284,
+								4286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1987.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],

@@ -38,7 +38,12 @@
                 return fullscreenGallery.play();
               }
             };
-            self.add(topBarScreen);
+            topBarScreen.onDayView = function(image) {};
+            topBarScreen.logoButtonClicked = function() {
+              mainMenuScreen.view.remove(topBarScreen.view);
+              return mainMenuScreen.play();
+            };
+            mainMenuScreen.view.add(topBarScreen.view);
             topBarScreen.play();
             return topBarScreen.click(button_id);
           };

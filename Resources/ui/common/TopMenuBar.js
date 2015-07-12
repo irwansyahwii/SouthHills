@@ -28,7 +28,8 @@
       this.buttonLogo = Ti.UI.createButton({
         backgroundImage: 'MenuBar-Logo.png',
         width: 99 / 2,
-        height: 102 / 2
+        height: 102 / 2,
+        button_id: 4
       });
       this.view.add(this.buttonLogo);
       this.buttonPlans = Ti.UI.createButton({
@@ -73,6 +74,7 @@
       this.addClickListener(this.buttonGallery);
       this.addClickListener(this.buttonLocation);
       this.addClickListener(this.buttonPlans);
+      this.addClickListener(this.buttonLogo);
       return this;
     };
 

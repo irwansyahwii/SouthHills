@@ -18,6 +18,7 @@
   ScreenWithTopBarMenu = (function() {
     function ScreenWithTopBarMenu() {
       this.click = bind(this.click, this);
+      this.showMainMenuScreen = bind(this.showMainMenuScreen, this);
       this.showFloorplanScreen = bind(this.showFloorplanScreen, this);
       this.showLocationScreen = bind(this.showLocationScreen, this);
       this.showGalleryScreen = bind(this.showGalleryScreen, this);
@@ -36,6 +37,7 @@
       this.view.add(this.topBar.view);
       this.subScreen = null;
       this.onDoubleTapped = null;
+      this.logoButtonClicked = null;
     }
 
     ScreenWithTopBarMenu.prototype.raiseOnDoubleTapped = function(eventInfo) {
@@ -105,6 +107,12 @@
       return this.assignToCurrentSubscreen(floorPlanscreen);
     };
 
+    ScreenWithTopBarMenu.prototype.showMainMenuScreen = function() {
+      if (this.logoButtonClicked !== null) {
+        return this.logoButtonClicked();
+      }
+    };
+
     ScreenWithTopBarMenu.prototype.click = function(button_id) {
       if (button_id === 0) {
         this.showAboutScreen();
@@ -116,7 +124,10 @@
         this.showLocationScreen();
       }
       if (button_id === 3) {
-        return this.showFloorplanScreen();
+        this.showFloorplanScreen();
+      }
+      if (button_id === 4) {
+        return this.showMainMenuScreen();
       }
     };
 

@@ -54,7 +54,7 @@
         <target device="iphone">true</target>
         <target device="mobileweb">true</target>
     </deployment-targets>
-    <sdk-version>4.0.0.RC4</sdk-version>
+    <sdk-version>4.0.0.GA</sdk-version>
     <property name="appc-app-id" type="string">557c0b02825aca8644c19b78</property>
     <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
     <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
@@ -70,6 +70,6 @@
     <property name="acs-api-key-production" type="string">lvLsQTG0pO3jfgFL93m7ICLL9mKWFm5f</property>
     <property name="acs-username-production" type="string">appc_app_user</property>
     <property name="acs-password-production" type="string">tZ7gto5lxoxFW8hq6y</property>
-    <property name="appc-org-id" type="number">100026622</property>
+    <property name="appc-org-id" type="int">100026622</property>
     <property name="appc-creator-user-id" type="string">131ec56d-4ded-47db-946b-bd53061f3481</property>
 </ti:app>
